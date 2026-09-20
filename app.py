@@ -40,11 +40,11 @@ if has_groq:
 def load_vocabulary():
     """Load all vocabulary files once (cached for performance)"""
     vocab_files = {
-        "market": "market_vocab.json",
-        "hospital": "hospital_vocab.json",
-        "papeleria": "papeleria_vocab.json",
-        "school": "school_context_vocab.json"
-    }
+    "market": "vocab_json/market_vocab.json",
+    "hospital": "vocab_json/hospital_vocab.json",
+    "papeleria": "vocab_json/papeleria_vocab.json",
+    "school": "vocab_json/school_context_vocab.json"
+}
     
     all_vocab = {}
     for lesson_name, filename in vocab_files.items():
