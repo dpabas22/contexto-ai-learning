@@ -15,6 +15,21 @@ st.set_page_config(
     layout="wide"
 )
 
+from gtts import gTTS
+import io
+
+def create_audio(text, lang='es'):
+    """Create MP3 audio from Spanish text using gTTS"""
+    try:
+        tts = gTTS(text=text, lang=lang, slow=False)
+        audio_buffer = io.BytesIO()
+        tts.write_to_fp(audio_buffer)
+        audio_buffer.seek(0)
+        return audio_buffer
+    except Exception as e:
+        st.warning(f"Audio generation failed: {str(e)[:50]}")
+        return None
+        
 # ============================================================================
 # SECURITY: Load environment variables safely
 # ============================================================================
