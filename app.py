@@ -160,6 +160,12 @@ Respond in Spanish and English. Keep response concise and practical."""
 st.title("🌍 Contexto: Language Learning for Real Expat Needs")
 st.markdown("**Learn Spanish through real conversations in Querétaro**")
 
+st.info("""
+✅ **Querétaro-Specific Content:** Market (La Cruz), Hospital, Papelería, School  
+⚠️ **Generic Responses:** Questions outside these 4 topics use general knowledge  
+📅 **Phase 2 Roadmap:** Restaurants, neighborhoods, transportation, shopping
+""")
+
 # Create tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["🏪 Market", "💬 Conversations", "🏥 Hospital", "📝 Papelería", "🎓 School"])
 
