@@ -221,10 +221,27 @@ with tab1:
                 with col2:
                     st.write(f"{item['english']} • {item['context']}")
                 
-                with st.expander(f"Details - {item['spanish']}"):
-                    st.write(f"📣 **Pronunciation:** {item['pronunciation']}")
-                    st.write(f"💬 **Example:** {item['example_spanish']}")
-                    st.write(f"🔤 **English:** {item['example_english']}")
+               with st.expander(f"Details - {item['spanish']}"):
+    col_audio1, col_audio2 = st.columns([1, 4])
+    with col_audio1:
+        if st.button("🔊", key=f"market_word_{item['id']}", help="Hear pronunciation"):
+            audio = create_audio(item['spanish'], lang='es')
+            if audio:
+                st.audio(audio, format='audio/mp3')
+    with col_audio2:
+        st.write(f"📣 **Pronunciation:** {item['pronunciation']}")
+    
+    st.write(f"💬 **Example:** {item['example_spanish']}")
+    st.write(f"🔀 **Hear example:**")
+    if st.button("▶️", key=f"market_ex_{item['id']}", help="Hear example"):
+        audio = create_audio(item['example_spanish'], lang='es')
+        if audio:
+            st.audio(audio, format='audio/mp3')
+    
+    st.write(f"🔤 **English:** {item['example_english']}")
+    
+    if item.get('price_range_pesos'):
+        st.write(f"💰 **Price range:** {item['price_range_pesos']} pesos")
                     
                     if item.get('price_range_pesos'):
                         st.write(f"💰 **Price range:** {item['price_range_pesos']} pesos")
