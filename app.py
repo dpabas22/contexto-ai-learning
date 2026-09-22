@@ -15,7 +15,10 @@ st.set_page_config(
     layout="wide"
 )
 
+from groq import Groq
+
 from gtts import gTTS
+
 import io
 
 def create_audio(text, lang='es'):
@@ -125,46 +128,27 @@ def search_vocabulary(query, lesson=None):
     
     return results
 
-def get_ai_response(query, lesson=None):
-    """Get AI response using Groq (if available)"""
-    if not has_groq:
-        return None
-    
+def get_ai_response(query, context=""):
     try:
-        # Get relevant vocabulary for context
-        results = search_vocabulary(query, lesson)
-        
-        if not results:
-            return None
-        
-        # Build context from vocabulary
-        context = "\n".join([
-            f"- {item['spanish']}: {item['english']} ({item['example_spanish']})"
-            for item in results[:5]
-        ])
-        
-        # Create prompt (safe, no injection risk)
-        prompt = f"""You are a Spanish teacher helping someone learn market Spanish in Querétaro.
-
-Relevant vocabulary:
-{context}
-
-Student's question: {query}
-
-Respond in Spanish and English. Keep response concise and practical."""
-        
-        # Call Groq API with timeout
-        response = client.messages.create(
+        client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+        response = client.chat.completions.create(  # ← CORRECT
             model="mixtral-8x7b-32768",
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {
+                    "role": "system",
+                    "content": f"You are a Spanish language tutor helping expats learn Spanish in Querétaro. {context}"
+                },
+                {
+                    "role": "user",
+                    "content": query
+                }
+            ],
             max_tokens=500,
             temperature=0.7
         )
-        
-        return response.content[0].text
-    
+        return response.choices[0].message.content
     except Exception as e:
-        st.error(f"⚠️ AI response failed: {str(e)[:100]}")
+        st.error(f"AI response failed: {str(e)[:100]}")
         return None
 
 # ============================================================================
