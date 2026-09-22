@@ -139,7 +139,7 @@ def get_ai_response(query, lesson="", context=""):
         lesson_context = f"The user is learning about {lesson}. " if lesson else ""
         
         response = client.chat.completions.create(
-            model="mixtral-8x7b-32768",
+            model="llama-3.1-70b-versatile",
             messages=[
                 {
                     "role": "system",
