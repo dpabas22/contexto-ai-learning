@@ -851,11 +851,11 @@ with tab4:
             st.warning("❌ No results found.")
 
          if has_groq:
-                if st.button(f"💡 Get AI help with '{pap_query}'", key="pap_ai"):
-                    with st.spinner("Thinking..."):
-                        ai_response = get_ai_response(pap_query, lesson="papeleria")
-                        if ai_response:
-                            st.info(ai_response)
+            if st.button(f"💡 Get AI help with '{pap_query}'", key="pap_ai"):
+                with st.spinner("Thinking..."):
+                    ai_response = get_ai_response(pap_query, lesson="papeleria")
+                    if ai_response:
+                         st.info(ai_response)
 
 # ============================================================================
 # TAB 5: SCHOOL (Vocab Search with Audio)
