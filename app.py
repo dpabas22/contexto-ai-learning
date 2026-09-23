@@ -235,14 +235,16 @@ with tab1:
                 
                 st.divider()
             
-            if has_groq:
-                if st.button(f"💡 Get AI help with '{market_query}'", key="market_ai"):
-                    with st.spinner("Thinking..."):
-                        ai_response = get_ai_response(market_query, lesson="market")
-                        if ai_response:
-                            st.info(ai_response)
         else:
             st.warning("❌ No results found.")
+
+        # AI BUTTON MOVED HERE (outside if/else)
+        if has_groq:
+            if st.button(f"💡 Get AI help with '{market_query}'", key="market_ai"):
+                with st.spinner("Thinking..."):
+                    ai_response = get_ai_response(market_query, lesson="market")
+                    if ai_response:
+                        st.info(ai_response)
 
 # ============================================================================
 # TAB 2: CONVERSATIONS (16 Dialogues - All 4 Lessons)
@@ -793,14 +795,15 @@ with tab3:
                 
                 st.divider()
             
-            if has_groq:
+        else:
+            st.warning("❌ No results found.")
+
+        if has_groq:
                 if st.button(f"💡 Get AI help with '{hospital_query}'", key="hospital_ai"):
                     with st.spinner("Thinking..."):
                         ai_response = get_ai_response(hospital_query, lesson="hospital")
                         if ai_response:
                             st.info(ai_response)
-        else:
-            st.warning("❌ No results found.")
 
 # ============================================================================
 # TAB 4: PAPELERÍA (Vocab Search with Audio)
@@ -844,14 +847,15 @@ with tab4:
                 
                 st.divider()
             
-            if has_groq:
+        else:
+            st.warning("❌ No results found.")
+
+         if has_groq:
                 if st.button(f"💡 Get AI help with '{pap_query}'", key="pap_ai"):
                     with st.spinner("Thinking..."):
                         ai_response = get_ai_response(pap_query, lesson="papeleria")
                         if ai_response:
                             st.info(ai_response)
-        else:
-            st.warning("❌ No results found.")
 
 # ============================================================================
 # TAB 5: SCHOOL (Vocab Search with Audio)
@@ -895,14 +899,15 @@ with tab5:
                 
                 st.divider()
             
-            if has_groq:
+        else:
+            st.warning("❌ No results found.")
+            
+        if has_groq:
                 if st.button(f"💡 Get AI help with '{school_query}'", key="school_ai"):
                     with st.spinner("Thinking..."):
                         ai_response = get_ai_response(school_query, lesson="school")
                         if ai_response:
                             st.info(ai_response)
-        else:
-            st.warning("❌ No results found.")
 
 # ============================================================================
 # TAB 6: GRAMMAR (Present Tense Verb Conjugations)
