@@ -196,7 +196,7 @@ with tab1:
             key="market_type"
         )
     
-    if market_query:
+     if market_query:
         results = search_vocabulary(market_query, lesson="market")
         
         if results:
@@ -234,11 +234,11 @@ with tab1:
                         st.write(f"💰 **Price range:** {item['price_range_pesos']} pesos")
                 
                 st.divider()
-            
+        
         else:
             st.warning("❌ No results found.")
-
-        # AI BUTTON MOVED HERE (outside if/else)
+        
+        # AI BUTTON (OUTSIDE if/else - correct indentation)
         if has_groq:
             if st.button(f"💡 Get AI help with '{market_query}'", key="market_ai"):
                 with st.spinner("Thinking..."):
@@ -759,7 +759,8 @@ with tab2:
 # ============================================================================
 # TAB 3: HOSPITAL (Vocab Search with Audio)
 # ============================================================================
-with tab3:
+    
+   with tab3:
     st.subheader("Hospital - Medical Appointments, Specialists, Insurance")
     
     hospital_query = st.text_input(
@@ -794,16 +795,17 @@ with tab3:
                     st.write(f"🔤 **English:** {item['example_english']}")
                 
                 st.divider()
-            
+        
         else:
             st.warning("❌ No results found.")
-
+        
+        # AI BUTTON (OUTSIDE if/else)
         if has_groq:
-                if st.button(f"💡 Get AI help with '{hospital_query}'", key="hospital_ai"):
-                    with st.spinner("Thinking..."):
-                        ai_response = get_ai_response(hospital_query, lesson="hospital")
-                        if ai_response:
-                            st.info(ai_response)
+            if st.button(f"💡 Get AI help with '{hospital_query}'", key="hospital_ai"):
+                with st.spinner("Thinking..."):
+                    ai_response = get_ai_response(hospital_query, lesson="hospital")
+                    if ai_response:
+                        st.info(ai_response)
 
 # ============================================================================
 # TAB 4: PAPELERÍA (Vocab Search with Audio)
@@ -846,17 +848,17 @@ with tab4:
                         st.write(f"💰 **Price range:** {item['price_range_pesos']} pesos")
                 
                 st.divider()
-            
+        
         else:
             st.warning("❌ No results found.")
-
-         if has_groq:
+        
+        # AI BUTTON (OUTSIDE if/else)
+        if has_groq:
             if st.button(f"💡 Get AI help with '{pap_query}'", key="pap_ai"):
                 with st.spinner("Thinking..."):
                     ai_response = get_ai_response(pap_query, lesson="papeleria")
                     if ai_response:
-                         st.info(ai_response)
-
+                        st.info(ai_response)
 # ============================================================================
 # TAB 5: SCHOOL (Vocab Search with Audio)
 # ============================================================================
@@ -898,16 +900,17 @@ with tab5:
                         st.write(f"💰 **Price range:** {item['price_range_pesos']} pesos")
                 
                 st.divider()
-            
+        
         else:
             st.warning("❌ No results found.")
-            
+        
+        # AI BUTTON (OUTSIDE if/else)
         if has_groq:
-                if st.button(f"💡 Get AI help with '{school_query}'", key="school_ai"):
-                    with st.spinner("Thinking..."):
-                        ai_response = get_ai_response(school_query, lesson="school")
-                        if ai_response:
-                            st.info(ai_response)
+            if st.button(f"💡 Get AI help with '{school_query}'", key="school_ai"):
+                with st.spinner("Thinking..."):
+                    ai_response = get_ai_response(school_query, lesson="school")
+                    if ai_response:
+                        st.info(ai_response)
 
 # ============================================================================
 # TAB 6: GRAMMAR (Present Tense Verb Conjugations)
