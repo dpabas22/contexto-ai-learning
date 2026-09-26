@@ -126,10 +126,7 @@ def search_vocabulary(query, lesson=None):
 # ============================================================================
 
 def get_ai_vocab_response(query, lesson=""):
-    """
-    Simple AI response: 1 call, auto language detection
-    Returns: {query, is_spanish, translation, usage_spanish, usage_english}
-    """
+    """Simple AI vocab: Detects language, translates, provides usage"""
     try:
         api_key = os.getenv("GROQ_API_KEY")
         if not api_key:
@@ -144,75 +141,52 @@ def get_ai_vocab_response(query, lesson=""):
         
         client = Groq(api_key=api_key)
         
-        # Detect language
+        # Detect language (Spanish indicators)
         spanish_indicators = ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü']
         is_spanish = any(char in query.lower() for char in spanish_indicators)
         
-        # Build prompt based on detected language
+        # Simpler, clearer prompt
         if is_spanish:
-            prompt = f"""Word: {query}
+            system_msg = "You are a translator. Return ONLY three lines, nothing else. No markdown, no asterisks, no extra text."
+            user_msg = f"""{query}
 
-Respond in EXACTLY this format (no extra text, no markdown):
-ENGLISH: [single word translation]
-USAGE_SPANISH: [one short example sentence, 5-10 words]
-USAGE_ENGLISH: [English translation of example]
-
-Example format:
-ENGLISH: market
-USAGE_SPANISH: Voy al mercado cada semana.
-USAGE_ENGLISH: I go to the market every week."""
+Line 1: English word
+Line 2: One short Spanish example sentence (5-8 words)
+Line 3: English translation of that sentence"""
         else:
-            prompt = f"""Word: {query}
+            system_msg = "You are a translator. Return ONLY three lines, nothing else. No markdown, no asterisks, no extra text."
+            user_msg = f"""{query}
 
-Respond in EXACTLY this format (no extra text, no markdown):
-SPANISH: [single word translation]
-USAGE_SPANISH: [one short example sentence, 5-10 words]
-USAGE_ENGLISH: [English translation of example]
-
-Example format:
-SPANISH: mercado
-USAGE_SPANISH: Voy al mercado cada semana.
-USAGE_ENGLISH: I go to the market every week."""
+Line 1: Spanish word
+Line 2: One short Spanish example sentence (5-8 words)
+Line 3: English translation of that sentence"""
         
         response = client.chat.completions.create(
             model="openai/gpt-oss-20b",
             messages=[
-                {
-                    "role": "system",
-                    "content": "You are a Spanish-English translator. Respond ONLY in the requested format. No extra text."
-                },
-                {
-                    "role": "user",
-                    "content": prompt
-                }
+                {"role": "system", "content": system_msg},
+                {"role": "user", "content": user_msg}
             ],
-            max_tokens=100,
-            temperature=0.3
+            max_tokens=80,
+            temperature=0.2
         )
         
-        # Parse response
+        # Parse response (3 lines)
         text = response.choices[0].message.content.strip()
-        lines = text.split('\n')
+        lines = [line.strip() for line in text.split('\n') if line.strip()]
         
         result = {
             "query": query,
             "is_spanish": is_spanish,
-            "translation": "",
-            "usage_spanish": "",
-            "usage_english": "",
+            "translation": lines[0] if len(lines) > 0 else "",
+            "usage_spanish": lines[1] if len(lines) > 1 else "",
+            "usage_english": lines[2] if len(lines) > 2 else "",
             "error": False
         }
         
-        for line in lines:
-            line = line.strip()
-            if line.startswith("SPANISH:"):
-                result["translation"] = line.replace("SPANISH:", "").strip()
-            elif line.startswith("ENGLISH:"):
-                result["translation"] = line.replace("ENGLISH:", "").strip()
-            elif line.startswith("USAGE_SPANISH:"):
-                result["usage_spanish"] = line.replace("USAGE_SPANISH:", "").strip()
-            elif line.startswith("USAGE_ENGLISH:"):
-                result["usage_english"] = line.replace("USAGE_ENGLISH:", "").strip()
+        # Safety check: if translation is empty or error, mark as error
+        if not result["translation"] or "error" in result["translation"].lower():
+            result["error"] = True
         
         return result
     
@@ -220,7 +194,7 @@ USAGE_ENGLISH: I go to the market every week."""
         return {
             "query": query,
             "is_spanish": False,
-            "translation": f"Error: {str(e)[:50]}",
+            "translation": f"Error: {str(e)[:40]}",
             "usage_spanish": "",
             "usage_english": "",
             "error": True
