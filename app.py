@@ -328,7 +328,7 @@ with tabs[0]:
                 st.divider()
                 
                 for exchange in conv["exchanges"]:
-                    emoji = conv["customer_emoji"] if exchange["speaker"] == conv["customer_name"] else conv["vendor_emoji"]
+                    emoji = conv["emoji"] if exchange["speaker"] == conv["customer_name"] else conv["vendor_emoji"]
                     st.markdown(f"**{emoji} {exchange['speaker']}**")
                     st.write(f"🇪🇸 *{exchange['spanish']}*")
                     st.write(f"🇬🇧 {exchange['english']}")
