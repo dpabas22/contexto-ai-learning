@@ -76,7 +76,7 @@ def load_all_data():
         "hospital": "vocab_json/hospital_vocab.json",
         "papeleria": "vocab_json/papeleria_vocab.json",
         "school": "vocab_json/school_context_vocab.json",
-        "expanded": "expanded_vocab.json"
+        "expanded": "vocab_json/expanded_vocab.json"
     }
     
     for lesson_name, filepath in vocab_files.items():
