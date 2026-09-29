@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "category": "Everyday Phrases",
+    "description": "Essential daily phrases for expats in Mexico, organized by situation",
+    "total_phrases": 120,
+    "regions": ["Querétaro", "Mexico-wide"],
+    "source": "Compiled from daily expat life scenarios"
+  },
+  "phrases": [
+    {
+      "id": "p001",
+      "category": "Restaurant/Café",
+      "spanish": "Me da un café, por favor",
+      "english": "Give me a coffee, please (polite Mexican way)",
+      "pronunciation": "meh dah oon KA-feh, por fah-VOR",
+      "context": "Ordering at café",
+      "cultural_note": "This is how locals naturally order in Mexico, more natural than 'Un café, por favor'",
+      "alternative": "¿Podría darme un café?"
+    },
+    {
+      "id": "p002",
+      "category": "Restaurant/Café",
+      "spanish": "¿Podría recomendarnos un plato?",
+      "english": "Could you recommend a dish to us?",
+      "pronunciation": "poh-DREE-ah reh-koh-men-DAHR-nos oon PLAH-toh",
+      "context": "Asking for menu advice",
+      "cultural_note": "Polite request in restaurants",
+      "alternative": "¿Qué me recomienda?"
+    },
+    {
+      "id": "p003",
+      "category": "Restaurant/Café",
+      "spanish": "¿Podría traernos un poco más de agua?",
+      "english": "Could you bring us more water?",
+      "pronunciation": "poh-DREE-ah trah-EHR-nos oon POH-koh mahs deh AH-gwah",
+      "context": "Requesting water during meal",
+      "cultural_note": "Free water is standard in Mexican restaurants",
+      "alternative": "Más agua, por favor"
+    },
+    {
+      "id": "p004",
+      "category": "Restaurant/Café",
+      "spanish": "¿Podría traerle otra cuchara a mi hija?",
+      "english": "Could you bring my daughter another spoon?",
+      "pronunciation": "poh-DREE-ah trah-EHR-leh OH-trah koo-CHAH-rah ah mee EE-hah",
+      "context": "Requesting items for children",
+      "cultural_note": "Common in family dining situations",
+      "alternative": "Una cuchara más, por favor"
+    },
+    {
+      "id": "p005",
+      "category": "Restaurant/Café",
+      "spanish": "¿Puede traerme la cuenta, por favor?",
+      "english": "Could you bring me the bill, please?",
+      "pronunciation": "PWEH-deh trah-EHR-meh lah KWEN-tah, por fah-VOR",
+      "context": "Requesting the check",
+      "cultural_note": "Important: in Mexico, servers won't bring bill until asked",
+      "alternative": "La cuenta, por favor"
+    },
+    {
+      "id": "p006",
+      "category": "Restaurant/Café",
+      "spanish": "¿Este platillo lleva lácteos?",
+      "english": "Does this dish contain dairy?",
+      "pronunciation": "EHS-teh plah-TEE-yoh YEH-vah LAHK-teh-os",
+      "context": "Checking ingredients (allergy/dietary)",
+      "cultural_note": "Important for people with food sensitivities",
+      "alternative": "¿Contiene leche este plato?"
+    },
+    {
+      "id": "p007",
+      "category": "Restaurant/Café",
+      "spanish": "¿Podría hacerlo sin picante?",
+      "english": "Could you make it without spice?",
+      "pronunciation": "poh-DREE-ah ah-SEHR-loh seen pee-KAHN-teh",
+      "context": "Requesting mild/non-spicy version",
+      "cultural_note": "Mexican food can be quite spicy",
+      "alternative": "Sin chile, por favor"
+    },
+    {
+      "id": "p008",
+      "category": "Restaurant/Café",
+      "spanish": "¿Puedo pagar con tarjeta?",
+      "english": "Can I pay by card?",
+      "pronunciation": "PWEH-doh pah-GAHR kohn tahr-HEH-tah",
+      "context": "Payment method inquiry",
+      "cultural_note": "Some small local places only accept cash",
+      "alternative": "¿Aceptan tarjeta de crédito?"
+    },
+    {
+      "id": "p009",
+      "category": "Restaurant/Café",
+      "spanish": "¿Cuánto es la propina normal?",
+      "english": "How much is the normal tip?",
+      "pronunciation": "KWAN-toh es lah proh-PEE-nah NOR-mahl",
+      "context": "Asking about tipping customs",
+      "cultural_note": "Typically 10-15% in Mexico, similar to US",
+      "alternative": "¿Qué porcentaje de propina?"
+    },
+    {
+      "id": "p010",
+      "category": "Restaurant/Café",
+      "spanish": "Me trae la factura, por favor",
+      "english": "Bring me the receipt, please",
+      "pronunciation": "meh TRAH-eh lah fahk-TOO-rah, por fah-VOR",
+      "context": "Requesting formal receipt",
+      "cultural_note": "Different from 'cuenta' (bill) - formal for tax purposes",
+      "alternative": "La factura, por favor"
+    },
+    {
+      "id": "p011",
+      "category": "Delivery",
+      "spanish": "¡Hola! ¿Es de Amazon?",
+      "english": "Hi! Is this from Amazon?",
+      "pronunciation": "OH-lah. Ehs deh ah-mah-ZOHN",
+      "context": "Answering door for delivery",
+      "cultural_note": "Amazon Mexico is very popular, many deliveries",
+      "alternative": "¿Qué empresa es?"
+    },
+    {
+      "id": "p012",
+      "category": "Delivery",
+      "spanish": "¿Tiene un paquete para mí?",
+      "english": "Do you have a package for me?",
+      "pronunciation": "tee-EH-neh oon pah-KEH-teh PAH-rah mee",
+      "context": "Confirming delivery",
+      "cultural_note": "Standard greeting for delivery persons",
+      "alternative": "¿Es para la casa 42?"
+    },
+    {
+      "id": "p013",
+      "category": "Delivery",
+      "spanish": "¿Lo puede dejar aquí, por favor?",
+      "english": "Can you leave it here, please?",
+      "pronunciation": "loh PWEH-deh deh-HAHR ah-KEE, por fah-VOR",
+      "context": "Requesting package placement",
+      "cultural_note": "Security concern: specify safe location",
+      "alternative": "Déjalo en la puerta"
+    },
+    {
+      "id": "p014",
+      "category": "Delivery",
+      "spanish": "¿Podría entregarlo mañana?",
+      "english": "Could you deliver it tomorrow?",
+      "pronunciation": "poh-DREE-ah ehn-treh-GAHR-loh mah-NYAH-nah",
+      "context": "Rescheduling delivery",
+      "cultural_note": "Often possible to reschedule in Mexico",
+      "alternative": "¿Hay otro horario disponible?"
+    },
+    {
+      "id": "p015",
+      "category": "Delivery",
+      "spanish": "Creo que tiene la dirección equivocada",
+      "english": "I think you have the wrong address",
+      "pronunciation": "KREH-oh keh tee-EH-neh lah dee-rehk-see-OHN eh-kee-voh-KAH-dah",
+      "context": "Correcting delivery error",
+      "cultural_note": "Common issue with inconsistent addressing",
+      "alternative": "Esta no es mi dirección"
+    },
+    {
+      "id": "p016",
+      "category": "Greetings",
+      "spanish": "¡Hola! ¿Cómo está?",
+      "english": "Hi! How are you? (formal)",
+      "pronunciation": "OH-lah. KOH-moh ehs-TAH",
+      "context": "Formal greeting",
+      "cultural_note": "Use with people you don't know well or respect",
+      "alternative": "Buenos días, ¿cómo va?"
+    },
+    {
+      "id": "p017",
+      "category": "Greetings",
+      "spanish": "¡Hola! ¿Cómo estás?",
+      "english": "Hi! How are you? (casual)",
+      "pronunciation": "OH-lah. KOH-moh ehs-TAHS",
+      "context": "Casual greeting",
+      "cultural_note": "Use with friends, family, peers",
+      "alternative": "¿Qué onda?"
+    },
+    {
+      "id": "p018",
+      "category": "Greetings",
+      "spanish": "Mucho gusto",
+      "english": "Nice to meet you",
+      "pronunciation": "MOO-choh GOOS-toh",
+      "context": "First meeting",
+      "cultural_note": "Standard professional greeting",
+      "alternative": "Encantado/a"
+    },
+    {
+      "id": "p019",
+      "category": "Greetings",
+      "spanish": "¡Qué gusto verte!",
+      "english": "So nice to see you!",
+      "pronunciation": "keh GOOS-toh BEHR-teh",
+      "context": "Greeting someone you know",
+      "cultural_note": "Warm, friendly greeting",
+      "alternative": "¡Qué bueno verte!"
+    },
+    {
+      "id": "p020",
+      "category": "Greetings",
+      "spanish": "Encantada de conocerte",
+      "english": "Nice to meet you (female speaker)",
+      "pronunciation": "ehn-kahn-TAH-dah deh koh-noh-SEHR-teh",
+      "context": "First meeting (woman speaking)",
+      "cultural_note": "Formal, professional context",
+      "alternative": "Mucho gusto"
+    },
+    {
+      "id": "p021",
+      "category": "Greetings",
+      "spanish": "¿Cómo has estado?",
+      "english": "How have you been? (familiar)",
+      "pronunciation": "KOH-moh ahs ehs-TAH-doh",
+      "context": "Greeting someone you know well",
+      "cultural_note": "Shows genuine interest",
+      "alternative": "¿Cómo has estado?"
+    },
+    {
+      "id": "p022",
+      "category": "Greetings",
+      "spanish": "Nos vemos. ¡Que tengas un buen día!",
+      "english": "See you. Have a good day!",
+      "pronunciation": "nos VEH-mos. keh TEN-gahs oon bwen DEE-ah",
+      "context": "Saying goodbye",
+      "cultural_note": "Warm, standard farewell",
+      "alternative": "¡Hasta luego!"
+    },
+    {
+      "id": "p023",
+      "category": "Greetings",
+      "spanish": "¿Te gustaría tomar un café algún día?",
+      "english": "Would you like to have coffee sometime?",
+      "pronunciation": "teh goos-tah-REE-ah toh-MAHR oon KA-feh AHL-goon DEE-ah",
+      "context": "Social invitation",
+      "cultural_note": "Standard way to suggest hanging out",
+      "alternative": "¿Quieres tomar café?"
+    },
+    {
+      "id": "p024",
+      "category": "Emergency/Urgent",
+      "spanish": "¡Ayuda, por favor!",
+      "english": "Help, please!",
+      "pronunciation": "ah-YOO-dah, por fah-VOR",
+      "context": "Requesting immediate help",
+      "cultural_note": "Clear, direct, understood",
+      "alternative": "¡Socorro!"
+    },
+    {
+      "id": "p025",
+      "category": "Emergency/Urgent",
+      "spanish": "¡Es una emergencia!",
+      "english": "It's an emergency!",
+      "pronunciation": "ehs OO-nah eh-mehr-HEN-see-ah",
+      "context": "Declaring urgent situation",
+      "cultural_note": "Gets immediate attention",
+      "alternative": "¡Es grave!"
+    },
+    {
+      "id": "p026",
+      "category": "Emergency/Urgent",
+      "spanish": "¡Llame a emergencias, por favor!",
+      "english": "Call emergency services, please! (formal urgent)",
+      "pronunciation": "YAH-meh ah eh-mehr-HEN-see-ahs, por fah-VOR",
+      "context": "Urgent medical/police situation",
+      "cultural_note": "Formal, desperate request",
+      "alternative": "¡Llama 911!"
+    },
+    {
+      "id": "p027",
+      "category": "Emergency/Urgent",
+      "spanish": "Necesito llamar a la policía",
+      "english": "I need to call the police",
+      "pronunciation": "neh-seh-SEE-toh yah-MAHR ah lah poh-lee-SEE-ah",
+      "context": "Crime/safety situation",
+      "cultural_note": "Clear statement of need",
+      "alternative": "¿Dónde está la policía?"
+    },
+    {
+      "id": "p028",
+      "category": "Emergency/Urgent",
+      "spanish": "Necesitamos una ambulancia",
+      "english": "We need an ambulance",
+      "pronunciation": "neh-seh-see-TAH-mos OO-nah ahm-boo-LAHN-see-ah",
+      "context": "Medical emergency",
+      "cultural_note": "Clear, direct, understood",
+      "alternative": "¡Llamar una ambulancia, por favor!"
+    },
+    {
+      "id": "p029",
+      "category": "Emergency/Urgent",
+      "spanish": "Necesito un médico",
+      "english": "I need a doctor",
+      "pronunciation": "neh-seh-SEE-toh oon MEH-dee-koh",
+      "context": "Medical assistance needed",
+      "cultural_note": "Clear, direct request",
+      "alternative": "¿Dónde hay un médico?"
+    },
+    {
+      "id": "p030",
+      "category": "Emergency/Urgent",
+      "spanish": "Me duele mucho aquí",
+      "english": "It hurts a lot here",
+      "pronunciation": "meh DWEH-leh MOO-choh ah-KEE",
+      "context": "Indicating pain location",
+      "cultural_note": "Point while saying it",
+      "alternative": "Tengo mucho dolor"
+    },
+    {
+      "id": "p031",
+      "category": "Emergency/Urgent",
+      "spanish": "Estoy perdida. ¿Puede ayudarme?",
+      "english": "I'm lost. Can you help me?",
+      "pronunciation": "ehs-TOY pehr-DEE-dah. PWEH-deh ah-yoo-DAHR-meh",
+      "context": "Lost/needing directions",
+      "cultural_note": "Feminine form; use 'perdido' if male",
+      "alternative": "¿Dónde estoy?"
+    },
+    {
+      "id": "p032",
+      "category": "Emergency/Urgent",
+      "spanish": "¿Puede decirme dónde estoy?",
+      "english": "Can you tell me where I am?",
+      "pronunciation": "PWEH-deh deh-SEER-meh DOHN-deh ehs-TOY",
+      "context": "Lost/orienting",
+      "cultural_note": "Useful when completely disoriented",
+      "alternative": "¿Dónde es este lugar?"
+    },
+    {
+      "id": "p033",
+      "category": "Emergency/Urgent",
+      "spanish": "¡Es peligroso!",
+      "english": "It's dangerous!",
+      "pronunciation": "ehs peh-lee-GROH-soh",
+      "context": "Warning of danger",
+      "cultural_note": "Clear alarm",
+      "alternative": "¡Cuidado!"
+    },
+    {
+      "id": "p034",
+      "category": "Everyday Questions",
+      "spanish": "¿Hay alguna florería más cerca de aquí?",
+      "english": "Is there any flower shop closer to here?",
+      "pronunciation": "AHY AHL-goo-nah floh-reh-REE-ah mahs SEHR-kah deh ah-KEE",
+      "context": "Looking for specific shop",
+      "cultural_note": "Flowers are popular gifts in Mexico",
+      "alternative": "¿Dónde hay flores?"
+    },
+    {
+      "id": "p035",
+      "category": "Everyday Questions",
+      "spanish": "¿Hay alguna tienda cerca de aquí?",
+      "english": "Is there any shop near here?",
+      "pronunciation": "AHY AHL-goo-nah tee-EHN-dah SEHR-kah deh ah-KEE",
+      "context": "Looking for any store",
+      "cultural_note": "Generic shop inquiry",
+      "alternative": "¿Dónde hay tiendas?"
+    },
+    {
+      "id": "p036",
+      "category": "Everyday Questions",
+      "spanish": "¿Dónde puedo conseguir esto?",
+      "english": "Where can I get this?",
+      "pronunciation": "DOHN-deh PWEH-doh kohn-seh-GHEER EHS-toh",
+      "context": "Searching for an item",
+      "cultural_note": "Essential expat question",
+      "alternative": "¿Dónde lo venden?"
+    },
+    {
+      "id": "p037",
+      "category": "Everyday Questions",
+      "spanish": "¿Podría ayudarme?",
+      "english": "Could you help me?",
+      "pronunciation": "poh-DREE-ah ah-yoo-DAHR-meh",
+      "context": "Asking for assistance",
+      "cultural_note": "Polite, widely understood",
+      "alternative": "¿Me puedes ayudar?"
+    },
+    {
+      "id": "p038",
+      "category": "Everyday Questions",
+      "spanish": "¿Necesitas algo?",
+      "english": "Do you need anything?",
+      "pronunciation": "neh-seh-SEE-tahs AHL-goh",
+      "context": "Offering assistance",
+      "cultural_note": "Friendly, helpful",
+      "alternative": "¿Te falta algo?"
+    },
+    {
+      "id": "p039",
+      "category": "Everyday Questions",
+      "spanish": "¿Hay alguien aquí?",
+      "english": "Is anyone here?",
+      "pronunciation": "AHY AHL-ghee-ehn ah-KEE",
+      "context": "Checking if anyone is present",
+      "cultural_note": "Used in stores, offices, homes",
+      "alternative": "¿Hay alguien?"
+    },
+    {
+      "id": "p040",
+      "category": "Everyday Questions",
+      "spanish": "No necesito nada",
+      "english": "I don't need anything",
+      "pronunciation": "noh neh-seh-SEE-toh NAH-dah",
+      "context": "Politely declining help",
+      "cultural_note": "Clear, polite refusal",
+      "alternative": "Estoy bien, gracias"
+    },
+    {
+      "id": "p041",
+      "category": "Everyday Questions",
+      "spanish": "¿Podemos sentarnos en cualquier lugar?",
+      "english": "Can we sit anywhere?",
+      "pronunciation": "poh-DEH-mos sehn-TAHR-nos ehn kwahl-kee-EHR loo-GAHR",
+      "context": "Asking about seating",
+      "cultural_note": "In restaurants, parks, waiting areas",
+      "alternative": "¿Cuál es un buen lugar para sentarse?"
+    },
+    {
+      "id": "p042",
+      "category": "Everyday Questions",
+      "spanish": "¿Cuál es tu nombre?",
+      "english": "What is your name? (casual)",
+      "pronunciation": "KWAL ehs too NOHM-breh",
+      "context": "Asking someone's name",
+      "cultural_note": "Casual, friendly",
+      "alternative": "¿Cómo te llamas?"
+    },
+    {
+      "id": "p043",
+      "category": "Everyday Questions",
+      "spanish": "Me llamo...",
+      "english": "My name is...",
+      "pronunciation": "meh YAH-moh...",
+      "context": "Introducing yourself",
+      "cultural_note": "Literal: 'I call myself'",
+      "alternative": "Yo soy..."
+    },
+    {
+      "id": "p044",
+      "category": "Everyday Questions",
+      "spanish": "¿De dónde eres?",
+      "english": "Where are you from? (casual)",
+      "pronunciation": "deh DOHN-deh EH-rehs",
+      "context": "Asking about origin",
+      "cultural_note": "Common conversation starter",
+      "alternative": "¿De qué país vienes?"
+    },
+    {
+      "id": "p045",
+      "category": "Everyday Questions",
+      "spanish": "Soy de... (Estados Unidos/Canada/etc)",
+      "english": "I'm from... (United States/Canada/etc)",
+      "pronunciation": "soy deh...",
+      "context": "Stating your origin",
+      "cultural_note": "Natural response",
+      "alternative": "Vengo de..."
+    },
+    {
+      "id": "p046",
+      "category": "Everyday Questions",
+      "spanish": "¿Cuánto tiempo llevas aquí?",
+      "english": "How long have you been here?",
+      "pronunciation": "KWAN-toh tee-EHM-poh YEH-vahs ah-KEE",
+      "context": "Asking about duration of stay",
+      "cultural_note": "Common expat conversation",
+      "alternative": "¿Cuándo llegaste?"
+    },
+    {
+      "id": "p047",
+      "category": "Everyday Questions",
+      "spanish": "Llevo seis meses aquí",
+      "english": "I've been here six months",
+      "pronunciation": "YEH-voh SEHS MEH-sehs ah-KEE",
+      "context": "Stating duration",
+      "cultural_note": "Common expat response",
+      "alternative": "Hace seis meses que estoy aquí"
+    },
+    {
+      "id": "p048",
+      "category": "Everyday Questions",
+      "spanish": "¿Cuánto cuesta?",
+      "english": "How much does it cost?",
+      "pronunciation": "KWAN-toh KWES-tah",
+      "context": "Asking price",
+      "cultural_note": "Essential for shopping",
+      "alternative": "¿Cuál es el precio?"
+    },
+    {
+      "id": "p049",
+      "category": "Everyday Questions",
+      "spanish": "Es muy caro",
+      "english": "It's very expensive",
+      "pronunciation": "ehs moo-ee KAH-roh",
+      "context": "Expressing that something costs too much",
+      "cultural_note": "Used during negotiation",
+      "alternative": "Es demasiado caro"
+    },
+    {
+      "id": "p050",
+      "category": "Everyday Questions",
+      "spanish": "¿Hay descuento?",
+      "english": "Is there a discount?",
+      "pronunciation": "AHY dehs-KWEHN-toh",
+      "context": "Asking for price reduction",
+      "cultural_note": "Common in markets",
+      "alternative": "¿Puedes hacerme un descuento?"
+    }
+  ]
+}

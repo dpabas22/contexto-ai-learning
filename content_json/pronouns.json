@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "category": "Grammar - Pronouns",
+    "description": "Complete Spanish pronouns reference with subject, object, and possessive forms",
+    "total_pronouns": 7,
+    "types": ["subject", "object", "possessive"]
+  },
+  "pronouns": [
+    {
+      "id": "pr001",
+      "person": "I (Yo)",
+      "pronouns": {
+        "subject": {
+          "form": "Yo",
+          "english": "I",
+          "example": "Yo hablo español",
+          "example_english": "I speak Spanish",
+          "usage": "Who is doing the action"
+        },
+        "object": {
+          "form": "Me",
+          "english": "Me",
+          "example": "Él me ve",
+          "example_english": "He sees me",
+          "usage": "Who receives the action"
+        },
+        "possessive": {
+          "form": "Mío/Mía",
+          "english": "Mine",
+          "example": "Esto es mío",
+          "example_english": "This is mine",
+          "usage": "Shows ownership"
+        }
+      }
+    },
+    {
+      "id": "pr002",
+      "person": "You - singular (Tú)",
+      "pronouns": {
+        "subject": {
+          "form": "Tú",
+          "english": "You (singular, familiar)",
+          "example": "Tú hablas inglés",
+          "example_english": "You speak English",
+          "usage": "Who is doing the action (informal)"
+        },
+        "object": {
+          "form": "Te",
+          "english": "You",
+          "example": "Yo te veo",
+          "example_english": "I see you",
+          "usage": "Who receives the action"
+        },
+        "possessive": {
+          "form": "Tuyo/Tuya",
+          "english": "Yours",
+          "example": "Eso es tuyo",
+          "example_english": "That is yours",
+          "usage": "Shows ownership"
+        }
+      }
+    },
+    {
+      "id": "pr003",
+      "person": "He (Él)",
+      "pronouns": {
+        "subject": {
+          "form": "Él",
+          "english": "He",
+          "example": "Él trabaja aquí",
+          "example_english": "He works here",
+          "usage": "Who is doing the action"
+        },
+        "object": {
+          "form": "Lo",
+          "english": "Him",
+          "example": "Nosotros lo vemos",
+          "example_english": "We see him",
+          "usage": "Who receives the action"
+        },
+        "possessive": {
+          "form": "Suyo",
+          "english": "His",
+          "example": "Eso es suyo",
+          "example_english": "That is his",
+          "usage": "Shows ownership"
+        }
+      }
+    },
+    {
+      "id": "pr004",
+      "person": "She (Ella)",
+      "pronouns": {
+        "subject": {
+          "form": "Ella",
+          "english": "She",
+          "example": "Ella estudia medicina",
+          "example_english": "She studies medicine",
+          "usage": "Who is doing the action"
+        },
+        "object": {
+          "form": "La",
+          "english": "Her",
+          "example": "Yo la ayudo",
+          "example_english": "I help her",
+          "usage": "Who receives the action"
+        },
+        "possessive": {
+          "form": "Suya",
+          "english": "Hers",
+          "example": "Eso es suya",
+          "example_english": "That is hers",
+          "usage": "Shows ownership"
+        }
+      }
+    },
+    {
+      "id": "pr005",
+      "person": "We (Nosotros)",
+      "pronouns": {
+        "subject": {
+          "form": "Nosotros",
+          "english": "We",
+          "example": "Nosotros vivimos en Querétaro",
+          "example_english": "We live in Querétaro",
+          "usage": "Who is doing the action"
+        },
+        "object": {
+          "form": "Nos",
+          "english": "Us",
+          "example": "Ellos nos ayudan",
+          "example_english": "They help us",
+          "usage": "Who receives the action"
+        },
+        "possessive": {
+          "form": "Nuestro/Nuestra",
+          "english": "Ours",
+          "example": "Esto es nuestro",
+          "example_english": "This is ours",
+          "usage": "Shows ownership"
+        }
+      }
+    },
+    {
+      "id": "pr006",
+      "person": "You - plural (Ustedes/Vosotros)",
+      "pronouns": {
+        "subject": {
+          "form": "Ustedes (Mexico) / Vosotros (Spain)",
+          "english": "You all",
+          "example": "Ustedes comen en el mercado",
+          "example_english": "You all eat at the market",
+          "usage": "Who is doing the action (multiple people)",
+          "note": "Mexico uses 'ustedes' for both formal and informal plural; Spain uses 'vosotros' for casual"
+        },
+        "object": {
+          "form": "Os (Spain) / Los/Las (Mexico)",
+          "english": "You all",
+          "example": "Yo os veo",
+          "example_english": "I see you all",
+          "usage": "Who receives the action",
+          "note": "In Mexico, use 'los' or 'las' depending on gender"
+        },
+        "possessive": {
+          "form": "Vuestro (Spain) / Suyo (Mexico)",
+          "english": "Yours",
+          "example": "Eso es vuestro",
+          "example_english": "That is yours (all)",
+          "usage": "Shows ownership",
+          "note": "Regional variation"
+        }
+      }
+    },
+    {
+      "id": "pr007",
+      "person": "They (Ellos/Ellas)",
+      "pronouns": {
+        "subject": {
+          "form": "Ellos/Ellas",
+          "english": "They",
+          "example": "Ellos viajan mañana",
+          "example_english": "They travel tomorrow",
+          "usage": "Who is doing the action"
+        },
+        "object": {
+          "form": "Los/Las",
+          "english": "Them",
+          "example": "Nosotros los vemos",
+          "example_english": "We see them",
+          "usage": "Who receives the action"
+        },
+        "possessive": {
+          "form": "Suyo/Suya",
+          "english": "Theirs",
+          "example": "Eso es suyo",
+          "example_english": "That is theirs",
+          "usage": "Shows ownership"
+        }
+      }
+    }
+  ],
+  "key_rules": [
+    {
+      "rule": "Subject pronouns",
+      "description": "Often omitted in Spanish (verb form shows who)",
+      "example": "Hablo español (I speak Spanish) = Yo hablo español"
+    },
+    {
+      "rule": "Object pronouns",
+      "description": "Come before verb (except with infinitives)",
+      "example": "Me llama = He calls me | Quiere llamarme = He wants to call me"
+    },
+    {
+      "rule": "Possessive pronouns",
+      "description": "Agree in gender with noun they replace",
+      "example": "Mi casa vs. Mía (feminine because casa is feminine)"
+    },
+    {
+      "rule": "Reflexive",
+      "description": "When subject acts on themselves",
+      "example": "Me levanto = I get up (myself) | Te sientas = You sit down (yourself)"
+    }
+  ]
+}
