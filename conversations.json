@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "category": "Conversations",
+    "description": "Real-world bilingual conversations with animated characters",
+    "total_scenarios": 4,
+    "regions": ["Market", "Hospital", "Paper Store", "School"]
+  },
+  "conversations": [
+    {
+      "id": "conv001",
+      "scenario": "Market (Mercado La Cruz)",
+      "setting": "Fresh produce section on Saturday morning",
+      "emoji": "👩‍🦰",
+      "customer_name": "Jasmine",
+      "vendor_name": "Vendor",
+      "vendor_emoji": "👨‍🍳",
+      "difficulty": "Beginner",
+      "exchanges": [
+        {
+          "order": 1,
+          "speaker": "Jasmine",
+          "spanish": "Hola, buenos días. ¿Tiene pescado fresco?",
+          "english": "Hi, good morning. Do you have fresh fish?",
+          "audio_path": "market_jasmine_001.mp3"
+        },
+        {
+          "order": 2,
+          "speaker": "Vendor",
+          "spanish": "Sí, claro. Tengo pargo y huachinango. ¿Cuál prefieres?",
+          "english": "Yes, of course. I have red snapper and red grouper. Which do you prefer?",
+          "audio_path": "market_vendor_001.mp3"
+        },
+        {
+          "order": 3,
+          "speaker": "Jasmine",
+          "spanish": "El pargo se ve bien. ¿A cuánto es el kilo?",
+          "english": "The snapper looks good. How much per kilo?",
+          "audio_path": "market_jasmine_002.mp3"
+        },
+        {
+          "order": 4,
+          "speaker": "Vendor",
+          "spanish": "A 120 pesos el kilo. ¿Cuánto quieres?",
+          "english": "120 pesos per kilo. How much do you want?",
+          "audio_path": "market_vendor_002.mp3"
+        },
+        {
+          "order": 5,
+          "speaker": "Jasmine",
+          "spanish": "Dame un kilo, por favor. Y un poco de chile serrano también.",
+          "english": "Give me a kilo, please. And some serrano peppers too.",
+          "audio_path": "market_jasmine_003.mp3"
+        },
+        {
+          "order": 6,
+          "speaker": "Vendor",
+          "spanish": "Perfecto. El chile también está muy fresco. ¿Algo más?",
+          "english": "Perfect. The peppers are very fresh too. Anything else?",
+          "audio_path": "market_vendor_003.mp3"
+        },
+        {
+          "order": 7,
+          "speaker": "Jasmine",
+          "spanish": "No, gracias. ¿Cuánto es todo?",
+          "english": "No, thank you. How much is everything?",
+          "audio_path": "market_jasmine_004.mp3"
+        },
+        {
+          "order": 8,
+          "speaker": "Vendor",
+          "spanish": "Son 150 pesos en total. Muy barato para tanta calidad.",
+          "english": "That's 150 pesos total. Very cheap for this quality.",
+          "audio_path": "market_vendor_004.mp3"
+        },
+        {
+          "order": 9,
+          "speaker": "Jasmine",
+          "spanish": "Está bien. Aquí está el dinero. Muchas gracias.",
+          "english": "That's fine. Here's the money. Thank you very much.",
+          "audio_path": "market_jasmine_005.mp3"
+        },
+        {
+          "order": 10,
+          "speaker": "Vendor",
+          "spanish": "¡Gracias a ti! Que disfrutes tu comida. ¡Nos vemos!",
+          "english": "Thank you! Enjoy your meal. See you!",
+          "audio_path": "market_vendor_005.mp3"
+        }
+      ],
+      "learning_points": [
+        "Greeting in Spanish",
+        "Asking about availability",
+        "Price inquiry",
+        "Ordering quantities",
+        "Thank you/farewell"
+      ]
+    },
+    {
+      "id": "conv002",
+      "scenario": "Hospital (Reception Desk)",
+      "setting": "Hospital waiting room, registration area",
+      "emoji": "👩‍🦰",
+      "customer_name": "Sarah",
+      "vendor_name": "Receptionist",
+      "vendor_emoji": "👨‍💼",
+      "difficulty": "Intermediate",
+      "exchanges": [
+        {
+          "order": 1,
+          "speaker": "Sarah",
+          "spanish": "Hola, buenos días. Tengo una cita con el doctor García a las 10.",
+          "english": "Hi, good morning. I have an appointment with Dr. García at 10.",
+          "audio_path": "hospital_sarah_001.mp3"
+        },
+        {
+          "order": 2,
+          "speaker": "Receptionist",
+          "spanish": "Buenos días. ¿Cuál es tu nombre, por favor?",
+          "english": "Good morning. What's your name, please?",
+          "audio_path": "hospital_receptionist_001.mp3"
+        },
+        {
+          "order": 3,
+          "speaker": "Sarah",
+          "spanish": "Me llamo Sarah Mitchell. Es mi primera vez aquí.",
+          "english": "My name is Sarah Mitchell. It's my first time here.",
+          "audio_path": "hospital_sarah_002.mp3"
+        },
+        {
+          "order": 4,
+          "speaker": "Receptionist",
+          "spanish": "Bienvenida. Necesito que llenes estos formularios, por favor. ¿Tienes seguro?",
+          "english": "Welcome. I need you to fill out these forms, please. Do you have insurance?",
+          "audio_path": "hospital_receptionist_002.mp3"
+        },
+        {
+          "order": 5,
+          "speaker": "Sarah",
+          "spanish": "Sí, tengo seguro privado. Aquí está la tarjeta.",
+          "english": "Yes, I have private insurance. Here's the card.",
+          "audio_path": "hospital_sarah_003.mp3"
+        },
+        {
+          "order": 6,
+          "speaker": "Receptionist",
+          "spanish": "Perfecto. Por favor, siéntate en la sala de espera. El doctor te llamará en unos minutos.",
+          "english": "Perfect. Please have a seat in the waiting room. The doctor will call you in a few minutes.",
+          "audio_path": "hospital_receptionist_003.mp3"
+        },
+        {
+          "order": 7,
+          "speaker": "Sarah",
+          "spanish": "Gracias. ¿Hay wifi aquí?",
+          "english": "Thank you. Is there WiFi here?",
+          "audio_path": "hospital_sarah_004.mp3"
+        },
+        {
+          "order": 8,
+          "speaker": "Receptionist",
+          "spanish": "Sí, la contraseña está en la pared. ¿Necesitas algo más?",
+          "english": "Yes, the password is on the wall. Do you need anything else?",
+          "audio_path": "hospital_receptionist_004.mp3"
+        }
+      ],
+      "learning_points": [
+        "Medical appointment terminology",
+        "Insurance/payment discussion",
+        "Form filling discussion",
+        "Polite requests",
+        "Healthcare vocabulary"
+      ]
+    },
+    {
+      "id": "conv003",
+      "scenario": "Papelería (Paper Store)",
+      "setting": "Local print shop, customer service counter",
+      "emoji": "👩‍🦰",
+      "customer_name": "Emma",
+      "vendor_name": "Shop Owner",
+      "vendor_emoji": "👨‍💻",
+      "difficulty": "Intermediate",
+      "exchanges": [
+        {
+          "order": 1,
+          "speaker": "Emma",
+          "spanish": "Hola. Necesito hacer copias de unos documentos. ¿Pueden hacerlo hoy?",
+          "english": "Hi. I need to make copies of some documents. Can you do it today?",
+          "audio_path": "papeleria_emma_001.mp3"
+        },
+        {
+          "order": 2,
+          "speaker": "Shop Owner",
+          "spanish": "Claro que sí. ¿Cuántas copias necesitas y en qué tamaño?",
+          "english": "Of course. How many copies do you need and what size?",
+          "audio_path": "papeleria_owner_001.mp3"
+        },
+        {
+          "order": 3,
+          "speaker": "Emma",
+          "spanish": "Necesito 50 copias en blanco y negro, tamaño carta. ¿Cuánto cuesta?",
+          "english": "I need 50 black and white copies, letter size. How much does it cost?",
+          "audio_path": "papeleria_emma_002.mp3"
+        },
+        {
+          "order": 4,
+          "speaker": "Shop Owner",
+          "spanish": "Son 50 centavos por copia. Total 25 pesos. Listo en 15 minutos.",
+          "english": "It's 50 cents per copy. Total 25 pesos. Ready in 15 minutes.",
+          "audio_path": "papeleria_owner_002.mp3"
+        },
+        {
+          "order": 5,
+          "speaker": "Emma",
+          "spanish": "Perfecto. También necesito encuadernar estos documentos. ¿Lo haces?",
+          "english": "Perfect. I also need to have these documents bound. Do you do that?",
+          "audio_path": "papeleria_emma_003.mp3"
+        },
+        {
+          "order": 6,
+          "speaker": "Shop Owner",
+          "spanish": "Sí, hacemos encuadernación. ¿Con espiral o con caratula?",
+          "english": "Yes, we do binding. Spiral or cover binding?",
+          "audio_path": "papeleria_owner_003.mp3"
+        },
+        {
+          "order": 7,
+          "speaker": "Emma",
+          "spanish": "Con espiral está bien. ¿Para cuándo estará listo?",
+          "english": "Spiral binding is fine. When will it be ready?",
+          "audio_path": "papeleria_emma_004.mp3"
+        },
+        {
+          "order": 8,
+          "speaker": "Shop Owner",
+          "spanish": "Mañana a las 2 de la tarde. ¿Necesitas algo más?",
+          "english": "Tomorrow at 2 PM. Do you need anything else?",
+          "audio_path": "papeleria_owner_004.mp3"
+        }
+      ],
+      "learning_points": [
+        "Printing/copying terminology",
+        "Quantities and measurements",
+        "Price discussion",
+        "Binding options",
+        "Timeline/scheduling"
+      ]
+    },
+    {
+      "id": "conv004",
+      "scenario": "School (Enrollment Office)",
+      "setting": "School administrative office, parent visiting",
+      "emoji": "👩‍🦰",
+      "customer_name": "Laura",
+      "vendor_name": "School Director",
+      "vendor_emoji": "👨‍🏫",
+      "difficulty": "Advanced",
+      "exchanges": [
+        {
+          "order": 1,
+          "speaker": "Laura",
+          "spanish": "Buenos días, señor Director. Mi hija va a entrar a la primaria este año. Quisiera información sobre inscripción.",
+          "english": "Good morning, Director. My daughter is starting elementary school this year. I'd like information about enrollment.",
+          "audio_path": "school_laura_001.mp3"
+        },
+        {
+          "order": 2,
+          "speaker": "School Director",
+          "spanish": "Buenos días. Bienvenida. ¿Cuántos años tiene tu hija? ¿De dónde vienen?",
+          "english": "Good morning. Welcome. How old is your daughter? Where are you from?",
+          "audio_path": "school_director_001.mp3"
+        },
+        {
+          "order": 3,
+          "speaker": "Laura",
+          "spanish": "Tiene 6 años. Somos de Canadá, pero llevamos 8 meses viviendo en Querétaro.",
+          "english": "She's 6 years old. We're from Canada, but we've been living in Querétaro for 8 months.",
+          "audio_path": "school_laura_002.mp3"
+        },
+        {
+          "order": 4,
+          "speaker": "School Director",
+          "spanish": "Perfecto. Esta escuela es bilingüe, lo que es ideal para estudiantes internacionales. ¿Qué programa prefieres, el mexicano o el internacional?",
+          "english": "Perfect. This school is bilingual, which is ideal for international students. Which program do you prefer, Mexican or international?",
+          "audio_path": "school_director_002.mp3"
+        },
+        {
+          "order": 5,
+          "speaker": "Laura",
+          "spanish": "¿Cuál es la diferencia? ¿Y cuánto cuesta cada uno?",
+          "english": "What's the difference? And how much does each one cost?",
+          "audio_path": "school_laura_003.mp3"
+        },
+        {
+          "order": 6,
+          "speaker": "School Director",
+          "spanish": "El programa mexicano sigue el currículum oficial. El internacional es más flexible. El mexicano cuesta 3,500 pesos al mes, el internacional 8,000. Te daré información detallada.",
+          "english": "The Mexican program follows the official curriculum. The international is more flexible. Mexican costs 3,500 pesos per month, international 8,000. I'll give you detailed information.",
+          "audio_path": "school_director_003.mp3"
+        },
+        {
+          "order": 7,
+          "speaker": "Laura",
+          "spanish": "Gracias. ¿Cuándo podemos hacer la entrevista y la evaluación de mi hija?",
+          "english": "Thank you. When can we do the interview and evaluation for my daughter?",
+          "audio_path": "school_laura_004.mp3"
+        },
+        {
+          "order": 8,
+          "speaker": "School Director",
+          "spanish": "Puedo hacerla la próxima semana. Los requisitos son: acta de nacimiento, certificado de vacunas y una carta de su escuela anterior. ¿Los tienes?",
+          "english": "I can do it next week. Requirements are: birth certificate, vaccination record, and a letter from her previous school. Do you have them?",
+          "audio_path": "school_director_004.mp3"
+        },
+        {
+          "order": 9,
+          "speaker": "Laura",
+          "spanish": "Sí, tengo todo. ¿Hay uniforme obligatorio? ¿Y transporte escolar?",
+          "english": "Yes, I have everything. Is the uniform mandatory? And is there school transport?",
+          "audio_path": "school_laura_005.mp3"
+        },
+        {
+          "order": 10,
+          "speaker": "School Director",
+          "spanish": "Sí, uniforme obligatorio. Y sí, ofrecemos transporte por una cuota extra de 800 pesos mensuales. ¿Tienes más preguntas?",
+          "english": "Yes, uniform is mandatory. And yes, we offer transport for an additional 800 pesos per month. Any more questions?",
+          "audio_path": "school_director_005.mp3"
+        }
+      ],
+      "learning_points": [
+        "Educational terminology",
+        "Program comparison/costs",
+        "Document requirements",
+        "Enrollment process",
+        "Advanced conversation skills"
+      ]
+    }
+  ]
+}
