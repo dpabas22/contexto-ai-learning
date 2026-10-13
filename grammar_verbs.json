@@ -1,0 +1,534 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "category": "Grammar",
+    "description": "Spanish verbs conjugated in present, preterite (simple past), and future tenses",
+    "total_verbs": 18,
+    "persons": ["yo", "tú", "él/ella/usted", "nosotros", "ustedes/ellos/ellas"],
+    "source": "Compiled from conversational Spanish"
+  },
+  "verbs": [
+    {
+      "id": "v001",
+      "infinitive": "Ser",
+      "english": "To be (permanent/identity)",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "soy", "example": "Yo soy ingeniero"},
+          "tú": {"form": "eres", "example": "Tú eres amable"},
+          "él_ella_usted": {"form": "es", "example": "Él es doctor"},
+          "nosotros": {"form": "somos", "example": "Nosotros somos amigos"},
+          "ustedes_ellos_ellas": {"form": "son", "example": "Ellos son estudiantes"}
+        },
+        "preterite": {
+          "yo": {"form": "fui", "example": "Yo fui al hospital"},
+          "tú": {"form": "fuiste", "example": "Tú fuiste a la escuela"},
+          "él_ella_usted": {"form": "fue", "example": "Él fue ingeniero"},
+          "nosotros": {"form": "fuimos", "example": "Nosotros fuimos juntos"},
+          "ustedes_ellos_ellas": {"form": "fueron", "example": "Ellos fueron estudiantes"}
+        },
+        "future": {
+          "yo": {"form": "seré", "example": "Yo seré médico"},
+          "tú": {"form": "serás", "example": "Tú serás abogada"},
+          "él_ella_usted": {"form": "será", "example": "Él será ingeniero"},
+          "nosotros": {"form": "seremos", "example": "Nosotros seremos colegas"},
+          "ustedes_ellos_ellas": {"form": "serán", "example": "Ellos serán profesionales"}
+        }
+      },
+      "tips": "Irregular in all tenses. Fui can mean 'I went' (ir) or 'I was' (ser); context decides."
+    },
+    {
+      "id": "v002",
+      "infinitive": "Estar",
+      "english": "To be (state/location)",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "estoy", "example": "Yo estoy en Querétaro"},
+          "tú": {"form": "estás", "example": "Tú estás aquí"},
+          "él_ella_usted": {"form": "está", "example": "Él está en el hospital"},
+          "nosotros": {"form": "estamos", "example": "Nosotros estamos listos"},
+          "ustedes_ellos_ellas": {"form": "están", "example": "Ellos están ocupados"}
+        },
+        "preterite": {
+          "yo": {"form": "estuve", "example": "Yo estuve enfermo"},
+          "tú": {"form": "estuviste", "example": "Tú estuviste allá"},
+          "él_ella_usted": {"form": "estuvo", "example": "Él estuvo en la escuela"},
+          "nosotros": {"form": "estuvimos", "example": "Nosotros estuvimos juntos"},
+          "ustedes_ellos_ellas": {"form": "estuvieron", "example": "Ellos estuvieron ahí"}
+        },
+        "future": {
+          "yo": {"form": "estaré", "example": "Yo estaré en casa"},
+          "tú": {"form": "estarás", "example": "Tú estarás listo"},
+          "él_ella_usted": {"form": "estará", "example": "Él estará en el mercado"},
+          "nosotros": {"form": "estaremos", "example": "Nosotros estaremos aquí"},
+          "ustedes_ellos_ellas": {"form": "estarán", "example": "Ellos estarán ocupados"}
+        }
+      },
+      "tips": "Irregular stem estuv- in preterite. Use for location, condition, feeling (not permanent identity)."
+    },
+    {
+      "id": "v003",
+      "infinitive": "Tener",
+      "english": "To have",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "tengo", "example": "Yo tengo hambre"},
+          "tú": {"form": "tienes", "example": "Tú tienes sed"},
+          "él_ella_usted": {"form": "tiene", "example": "Ella tiene dos hijos"},
+          "nosotros": {"form": "tenemos", "example": "Nosotros tenemos tiempo"},
+          "ustedes_ellos_ellas": {"form": "tienen", "example": "Ellos tienen dinero"}
+        },
+        "preterite": {
+          "yo": {"form": "tuve", "example": "Yo tuve suerte"},
+          "tú": {"form": "tuviste", "example": "Tú tuviste problemas"},
+          "él_ella_usted": {"form": "tuvo", "example": "Él tuvo un accidente"},
+          "nosotros": {"form": "tuvimos", "example": "Nosotros tuvimos miedo"},
+          "ustedes_ellos_ellas": {"form": "tuvieron", "example": "Ellos tuvieron éxito"}
+        },
+        "future": {
+          "yo": {"form": "tendré", "example": "Yo tendré dinero"},
+          "tú": {"form": "tendrás", "example": "Tú tendrás oportunidad"},
+          "él_ella_usted": {"form": "tendrá", "example": "Él tendrá paciencia"},
+          "nosotros": {"form": "tendremos", "example": "Nosotros tendremos opciones"},
+          "ustedes_ellos_ellas": {"form": "tendrán", "example": "Ellos tendrán responsabilidad"}
+        }
+      },
+      "tips": "Irregular stem tuv- in preterite, tendr- in future. Essential verb for expressing possession/need."
+    },
+    {
+      "id": "v004",
+      "infinitive": "Hacer",
+      "english": "To do/make",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "hago", "example": "Yo hago la cena"},
+          "tú": {"form": "haces", "example": "Tú haces un buen trabajo"},
+          "él_ella_usted": {"form": "hace", "example": "Él hace ejercicio"},
+          "nosotros": {"form": "hacemos", "example": "Nosotros hacemos planes"},
+          "ustedes_ellos_ellas": {"form": "hacen", "example": "Ellos hacen preguntas"}
+        },
+        "preterite": {
+          "yo": {"form": "hice", "example": "Yo hice la tarea"},
+          "tú": {"form": "hiciste", "example": "Tú hiciste un error"},
+          "él_ella_usted": {"form": "hizo", "example": "Él hizo un comentario"},
+          "nosotros": {"form": "hicimos", "example": "Nosotros hicimos un viaje"},
+          "ustedes_ellos_ellas": {"form": "hicieron", "example": "Ellos hicieron un esfuerzo"}
+        },
+        "future": {
+          "yo": {"form": "haré", "example": "Yo haré la limpieza"},
+          "tú": {"form": "harás", "example": "Tú harás lo mejor"},
+          "él_ella_usted": {"form": "hará", "example": "Él hará un cambio"},
+          "nosotros": {"form": "haremos", "example": "Nosotros haremos un picnic"},
+          "ustedes_ellos_ellas": {"form": "harán", "example": "Ellos harán una donación"}
+        }
+      },
+      "tips": "Irregular stem hic- in preterite, har- in future. NOT the same as 'haber' (he, has, ha)."
+    },
+    {
+      "id": "v005",
+      "infinitive": "Ir",
+      "english": "To go",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "voy", "example": "Yo voy al mercado"},
+          "tú": {"form": "vas", "example": "Tú vas a la escuela"},
+          "él_ella_usted": {"form": "va", "example": "Ella va al hospital"},
+          "nosotros": {"form": "vamos", "example": "Nosotros vamos al cine"},
+          "ustedes_ellos_ellas": {"form": "van", "example": "Ellos van de viaje"}
+        },
+        "preterite": {
+          "yo": {"form": "fui", "example": "Yo fui a Querétaro"},
+          "tú": {"form": "fuiste", "example": "Tú fuiste ayer"},
+          "él_ella_usted": {"form": "fue", "example": "Él fue al banco"},
+          "nosotros": {"form": "fuimos", "example": "Nosotros fuimos juntos"},
+          "ustedes_ellos_ellas": {"form": "fueron", "example": "Ellos fueron temprano"}
+        },
+        "future": {
+          "yo": {"form": "iré", "example": "Yo iré mañana"},
+          "tú": {"form": "irás", "example": "Tú irás tarde"},
+          "él_ella_usted": {"form": "irá", "example": "Ella irá después"},
+          "nosotros": {"form": "iremos", "example": "Nosotros iremos juntos"},
+          "ustedes_ellos_ellas": {"form": "irán", "example": "Ellos irán sin ti"}
+        }
+      },
+      "tips": "Completely irregular. Same preterite forms as 'ser'. Used with 'a' for future: voy a + infinitive = I'm going to..."
+    },
+    {
+      "id": "v006",
+      "infinitive": "Venir",
+      "english": "To come",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "vengo", "example": "Yo vengo a las tres"},
+          "tú": {"form": "vienes", "example": "Tú vienes solo"},
+          "él_ella_usted": {"form": "viene", "example": "Él viene con su familia"},
+          "nosotros": {"form": "venimos", "example": "Nosotros venimos del trabajo"},
+          "ustedes_ellos_ellas": {"form": "vienen", "example": "Ellos vienen mañana"}
+        },
+        "preterite": {
+          "yo": {"form": "vine", "example": "Yo vine ayer"},
+          "tú": {"form": "viniste", "example": "Tú viniste tarde"},
+          "él_ella_usted": {"form": "vino", "example": "Él vino sin avisar"},
+          "nosotros": {"form": "vinimos", "example": "Nosotros vinimos juntos"},
+          "ustedes_ellos_ellas": {"form": "vinieron", "example": "Ellos vinieron temprano"}
+        },
+        "future": {
+          "yo": {"form": "vendré", "example": "Yo vendré pronto"},
+          "tú": {"form": "vendrás", "example": "Tú vendrás después"},
+          "él_ella_usted": {"form": "vendrá", "example": "Ella vendrá con nosotros"},
+          "nosotros": {"form": "vendremos", "example": "Nosotros vendremos juntos"},
+          "ustedes_ellos_ellas": {"form": "vendrán", "example": "Ellos vendrán al final"}
+        }
+      },
+      "tips": "Irregular stem vin- in preterite, vendr- in future. Opposite of 'ir' (to go)."
+    },
+    {
+      "id": "v007",
+      "infinitive": "Dar",
+      "english": "To give",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "doy", "example": "Yo doy dinero"},
+          "tú": {"form": "das", "example": "Tú das un regalo"},
+          "él_ella_usted": {"form": "da", "example": "Él da consejos"},
+          "nosotros": {"form": "damos", "example": "Nosotros damos apoyo"},
+          "ustedes_ellos_ellas": {"form": "dan", "example": "Ellos dan gracias"}
+        },
+        "preterite": {
+          "yo": {"form": "di", "example": "Yo di una moneda"},
+          "tú": {"form": "diste", "example": "Tú diste tu dirección"},
+          "él_ella_usted": {"form": "dio", "example": "Ella dio su número"},
+          "nosotros": {"form": "dimos", "example": "Nosotros dimos nuestro nombre"},
+          "ustedes_ellos_ellas": {"form": "dieron", "example": "Ellos dieron su opinión"}
+        },
+        "future": {
+          "yo": {"form": "daré", "example": "Yo daré mi cuenta"},
+          "tú": {"form": "darás", "example": "Tú darás una oportunidad"},
+          "él_ella_usted": {"form": "dará", "example": "Él dará su apoyo"},
+          "nosotros": {"form": "daremos", "example": "Nosotros daremos nuestro mejor esfuerzo"},
+          "ustedes_ellos_ellas": {"form": "darán", "example": "Ellos darán una solución"}
+        }
+      },
+      "tips": "Irregular preterite forms are like -er verbs (di, diste, dio). Important for Mexican Spanish: 'Me da un café' (Give me a coffee)."
+    },
+    {
+      "id": "v008",
+      "infinitive": "Poder",
+      "english": "Can/be able to",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "puedo", "example": "Yo puedo ayudarte"},
+          "tú": {"form": "puedes", "example": "Tú puedes lograrlo"},
+          "él_ella_usted": {"form": "puede", "example": "Él puede venir"},
+          "nosotros": {"form": "podemos", "example": "Nosotros podemos intentarlo"},
+          "ustedes_ellos_ellas": {"form": "pueden", "example": "Ellos pueden esperar"}
+        },
+        "preterite": {
+          "yo": {"form": "pude", "example": "Yo pude resolverlo"},
+          "tú": {"form": "pudiste", "example": "Tú pudiste terminar"},
+          "él_ella_usted": {"form": "pudo", "example": "Él pudo encontrarlo"},
+          "nosotros": {"form": "pudimos", "example": "Nosotros pudimos hacerlo"},
+          "ustedes_ellos_ellas": {"form": "pudieron", "example": "Ellos pudieron llegar"}
+        },
+        "future": {
+          "yo": {"form": "podré", "example": "Yo podré llamarte"},
+          "tú": {"form": "podrás", "example": "Tú podrás hacerlo"},
+          "él_ella_usted": {"form": "podrá", "example": "Ella podrá venir"},
+          "nosotros": {"form": "podremos", "example": "Nosotros podremos ayudar"},
+          "ustedes_ellos_ellas": {"form": "podrán", "example": "Ellos podrán participar"}
+        }
+      },
+      "tips": "Irregular stem pud- in preterite, podr- in future. Essential for polite requests: '¿Puedo...?' or '¿Podría...?'"
+    },
+    {
+      "id": "v009",
+      "infinitive": "Querer",
+      "english": "To want/love",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "quiero", "example": "Yo quiero un café"},
+          "tú": {"form": "quieres", "example": "Tú quieres ir"},
+          "él_ella_usted": {"form": "quiere", "example": "Ella quiere estudiar"},
+          "nosotros": {"form": "queremos", "example": "Nosotros queremos paz"},
+          "ustedes_ellos_ellas": {"form": "quieren", "example": "Ellos quieren trabajar"}
+        },
+        "preterite": {
+          "yo": {"form": "quise", "example": "Yo quise ayudarte"},
+          "tú": {"form": "quisiste", "example": "Tú quisiste irte"},
+          "él_ella_usted": {"form": "quiso", "example": "Él quiso quedarse"},
+          "nosotros": {"form": "quisimos", "example": "Nosotros quisimos intentar"},
+          "ustedes_ellos_ellas": {"form": "quisieron", "example": "Ellos quisieron salir"}
+        },
+        "future": {
+          "yo": {"form": "querré", "example": "Yo querré volver"},
+          "tú": {"form": "querrás", "example": "Tú querrás descansar"},
+          "él_ella_usted": {"form": "querrá", "example": "Ella querrá conocerte"},
+          "nosotros": {"form": "querremos", "example": "Nosotros querremos celebrar"},
+          "ustedes_ellos_ellas": {"form": "querrán", "example": "Ellos querrán participar"}
+        }
+      },
+      "tips": "Irregular stem quis- in preterite, querr- in future. 'Querer' means 'to want' or 'to love' depending on context."
+    },
+    {
+      "id": "v010",
+      "infinitive": "Gustar",
+      "english": "To like (literally: to please)",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "me gusta", "example": "Me gusta el café"},
+          "tú": {"form": "te gusta", "example": "Te gusta la música"},
+          "él_ella_usted": {"form": "le gusta", "example": "Le gusta este lugar"},
+          "nosotros": {"form": "nos gusta", "example": "Nos gusta México"},
+          "ustedes_ellos_ellas": {"form": "les gusta", "example": "Les gusta la comida"}
+        },
+        "preterite": {
+          "yo": {"form": "me gustó", "example": "Me gustó la película"},
+          "tú": {"form": "te gustó", "example": "Te gustó el restaurante"},
+          "él_ella_usted": {"form": "le gustó", "example": "Le gustó el viaje"},
+          "nosotros": {"form": "nos gustó", "example": "Nos gustó mucho"},
+          "ustedes_ellos_ellas": {"form": "les gustó", "example": "Les gustó todo"}
+        },
+        "future": {
+          "yo": {"form": "me gustará", "example": "Me gustará vivir aquí"},
+          "tú": {"form": "te gustará", "example": "Te gustará este trabajo"},
+          "él_ella_usted": {"form": "le gustará", "example": "Le gustará la propuesta"},
+          "nosotros": {"form": "nos gustará", "example": "Nos gustará la experiencia"},
+          "ustedes_ellos_ellas": {"form": "les gustará", "example": "Les gustará mucho"}
+        }
+      },
+      "tips": "Unique construction: 'Me gusta' literally means 'It pleases me.' Subject comes AFTER the verb. Regular -ar conjugation."
+    },
+    {
+      "id": "v011",
+      "infinitive": "Necesitar",
+      "english": "To need",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "necesito", "example": "Yo necesito ayuda"},
+          "tú": {"form": "necesitas", "example": "Tú necesitas descanso"},
+          "él_ella_usted": {"form": "necesita", "example": "Ella necesita dinero"},
+          "nosotros": {"form": "necesitamos", "example": "Nosotros necesitamos tiempo"},
+          "ustedes_ellos_ellas": {"form": "necesitan", "example": "Ellos necesitan oportunidades"}
+        },
+        "preterite": {
+          "yo": {"form": "necesité", "example": "Yo necesité hablar contigo"},
+          "tú": {"form": "necesitaste", "example": "Tú necesitaste apoyo"},
+          "él_ella_usted": {"form": "necesitó", "example": "Él necesitó tiempo"},
+          "nosotros": {"form": "necesitamos", "example": "Nosotros necesitamos ayuda"},
+          "ustedes_ellos_ellas": {"form": "necesitaron", "example": "Ellos necesitaron recursos"}
+        },
+        "future": {
+          "yo": {"form": "necesitaré", "example": "Yo necesitaré tu apoyo"},
+          "tú": {"form": "necesitarás", "example": "Tú necesitarás paciencia"},
+          "él_ella_usted": {"form": "necesitará", "example": "Ella necesitará orientación"},
+          "nosotros": {"form": "necesitaremos", "example": "Nosotros necesitaremos recursos"},
+          "ustedes_ellos_ellas": {"form": "necesitarán", "example": "Ellos necesitarán dirección"}
+        }
+      },
+      "tips": "Regular -ar verb. Common in expat life: 'Necesito ayuda', 'Necesito un doctor'."
+    },
+    {
+      "id": "v012",
+      "infinitive": "Hablar",
+      "english": "To speak/talk",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "hablo", "example": "Yo hablo español"},
+          "tú": {"form": "hablas", "example": "Tú hablas bien"},
+          "él_ella_usted": {"form": "habla", "example": "Él habla lentamente"},
+          "nosotros": {"form": "hablamos", "example": "Nosotros hablamos en español"},
+          "ustedes_ellos_ellas": {"form": "hablan", "example": "Ellos hablan varios idiomas"}
+        },
+        "preterite": {
+          "yo": {"form": "hablé", "example": "Yo hablé con el doctor"},
+          "tú": {"form": "hablaste", "example": "Tú hablaste ayer"},
+          "él_ella_usted": {"form": "habló", "example": "Ella habló con claridad"},
+          "nosotros": {"form": "hablamos", "example": "Nosotros hablamos todo el día"},
+          "ustedes_ellos_ellas": {"form": "hablaron", "example": "Ellos hablaron de negocios"}
+        },
+        "future": {
+          "yo": {"form": "hablaré", "example": "Yo hablaré mañana"},
+          "tú": {"form": "hablarás", "example": "Tú hablarás con ellos"},
+          "él_ella_usted": {"form": "hablará", "example": "Él hablará en la reunión"},
+          "nosotros": {"form": "hablaremos", "example": "Nosotros hablaremos después"},
+          "ustedes_ellos_ellas": {"form": "hablarán", "example": "Ellos hablarán primero"}
+        }
+      },
+      "tips": "Regular -ar verb. Foundation verb for language learning."
+    },
+    {
+      "id": "v013",
+      "infinitive": "Decir",
+      "english": "To say/tell",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "digo", "example": "Yo digo la verdad"},
+          "tú": {"form": "dices", "example": "Tú dices mentiras"},
+          "él_ella_usted": {"form": "dice", "example": "Él dice que sí"},
+          "nosotros": {"form": "decimos", "example": "Nosotros decimos adiós"},
+          "ustedes_ellos_ellas": {"form": "dicen", "example": "Ellos dicen que no"}
+        },
+        "preterite": {
+          "yo": {"form": "dije", "example": "Yo dije adiós"},
+          "tú": {"form": "dijiste", "example": "Tú dijiste que venías"},
+          "él_ella_usted": {"form": "dijo", "example": "Él dijo su nombre"},
+          "nosotros": {"form": "dijimos", "example": "Nosotros dijimos gracias"},
+          "ustedes_ellos_ellas": {"form": "dijeron", "example": "Ellos dijeron la verdad"}
+        },
+        "future": {
+          "yo": {"form": "diré", "example": "Yo diré mi opinión"},
+          "tú": {"form": "dirás", "example": "Tú dirás lo que piensas"},
+          "él_ella_usted": {"form": "dirá", "example": "Ella dirá la verdad"},
+          "nosotros": {"form": "diremos", "example": "Nosotros diremos nuestro punto"},
+          "ustedes_ellos_ellas": {"form": "dirán", "example": "Ellos dirán su versión"}
+        }
+      },
+      "tips": "Irregular stem dij- in preterite, dir- in future. Essential for communication."
+    },
+    {
+      "id": "v014",
+      "infinitive": "Preguntar",
+      "english": "To ask (a question)",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "pregunto", "example": "Yo pregunto dónde está"},
+          "tú": {"form": "preguntas", "example": "Tú preguntas constantemente"},
+          "él_ella_usted": {"form": "pregunta", "example": "Él pregunta por ti"},
+          "nosotros": {"form": "preguntamos", "example": "Nosotros preguntamos el camino"},
+          "ustedes_ellos_ellas": {"form": "preguntan", "example": "Ellos preguntan la hora"}
+        },
+        "preterite": {
+          "yo": {"form": "pregunté", "example": "Yo pregunté dónde estava"},
+          "tú": {"form": "preguntaste", "example": "Tú preguntaste el precio"},
+          "él_ella_usted": {"form": "preguntó", "example": "Él preguntó mi nombre"},
+          "nosotros": {"form": "preguntamos", "example": "Nosotros preguntamos la ruta"},
+          "ustedes_ellos_ellas": {"form": "preguntaron", "example": "Ellos preguntaron por nosotros"}
+        },
+        "future": {
+          "yo": {"form": "preguntaré", "example": "Yo preguntaré después"},
+          "tú": {"form": "preguntarás", "example": "Tú preguntarás mañana"},
+          "él_ella_usted": {"form": "preguntará", "example": "Ella preguntará más tarde"},
+          "nosotros": {"form": "preguntaremos", "example": "Nosotros preguntaremos pronto"},
+          "ustedes_ellos_ellas": {"form": "preguntarán", "example": "Ellos preguntarán después"}
+        }
+      },
+      "tips": "Regular -ar verb. Essential for learning: constantly ask questions!"
+    },
+    {
+      "id": "v015",
+      "infinitive": "Responder",
+      "english": "To answer/respond",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "respondo", "example": "Yo respondo rápido"},
+          "tú": {"form": "respondes", "example": "Tú respondes bien"},
+          "él_ella_usted": {"form": "responde", "example": "Él responde educadamente"},
+          "nosotros": {"form": "respondemos", "example": "Nosotros respondemos juntos"},
+          "ustedes_ellos_ellas": {"form": "responden", "example": "Ellos responden inmediatamente"}
+        },
+        "preterite": {
+          "yo": {"form": "respondí", "example": "Yo respondí al teléfono"},
+          "tú": {"form": "respondiste", "example": "Tú respondiste mal"},
+          "él_ella_usted": {"form": "respondió", "example": "Él respondió que sí"},
+          "nosotros": {"form": "respondimos", "example": "Nosotros respondimos correctamente"},
+          "ustedes_ellos_ellas": {"form": "respondieron", "example": "Ellos respondieron negativamente"}
+        },
+        "future": {
+          "yo": {"form": "responderé", "example": "Yo responderé tu correo"},
+          "tú": {"form": "responderás", "example": "Tú responderás pronto"},
+          "él_ella_usted": {"form": "responderá", "example": "Ella responderá mañana"},
+          "nosotros": {"form": "responderemos", "example": "Nosotros responderemos después"},
+          "ustedes_ellos_ellas": {"form": "responderán", "example": "Ellos responderán cuando puedan"}
+        }
+      },
+      "tips": "Regular -er verb. Used for answering questions, phones, emails."
+    },
+    {
+      "id": "v016",
+      "infinitive": "Ver",
+      "english": "To see/watch",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "veo", "example": "Yo veo una película"},
+          "tú": {"form": "ves", "example": "Tú ves el mercado"},
+          "él_ella_usted": {"form": "ve", "example": "Él ve el hospital"},
+          "nosotros": {"form": "vemos", "example": "Nosotros vemos todo"},
+          "ustedes_ellos_ellas": {"form": "ven", "example": "Ellos ven la ciudad"}
+        },
+        "preterite": {
+          "yo": {"form": "vi", "example": "Yo vi una mariposa"},
+          "tú": {"form": "viste", "example": "Tú viste el accidente"},
+          "él_ella_usted": {"form": "vio", "example": "Él vio el problema"},
+          "nosotros": {"form": "vimos", "example": "Nosotros vimos el espectáculo"},
+          "ustedes_ellos_ellas": {"form": "vieron", "example": "Ellos vieron la solución"}
+        },
+        "future": {
+          "yo": {"form": "veré", "example": "Yo veré qué pasa"},
+          "tú": {"form": "verás", "example": "Tú verás lo que digo"},
+          "él_ella_usted": {"form": "verá", "example": "Ella verá los cambios"},
+          "nosotros": {"form": "veremos", "example": "Nosotros veremos qué sucede"},
+          "ustedes_ellos_ellas": {"form": "verán", "example": "Ellos verán la diferencia"}
+        }
+      },
+      "tips": "Irregular in preterite (vi, viste, vio). Regular -ir ending in present. Essential for perception."
+    },
+    {
+      "id": "v017",
+      "infinitive": "Llegar",
+      "english": "To arrive",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "llego", "example": "Yo llego a las tres"},
+          "tú": {"form": "llegas", "example": "Tú llegas tarde"},
+          "él_ella_usted": {"form": "llega", "example": "Él llega temprano"},
+          "nosotros": {"form": "llegamos", "example": "Nosotros llegamos juntos"},
+          "ustedes_ellos_ellas": {"form": "llegan", "example": "Ellos llegan mañana"}
+        },
+        "preterite": {
+          "yo": {"form": "llegué", "example": "Yo llegué ayer"},
+          "tú": {"form": "llegaste", "example": "Tú llegaste solo"},
+          "él_ella_usted": {"form": "llegó", "example": "Ella llegó con retraso"},
+          "nosotros": {"form": "llegamos", "example": "Nosotros llegamos al atardecer"},
+          "ustedes_ellos_ellas": {"form": "llegaron", "example": "Ellos llegaron sin avisar"}
+        },
+        "future": {
+          "yo": {"form": "llegaré", "example": "Yo llegaré en cinco minutos"},
+          "tú": {"form": "llegarás", "example": "Tú llegarás pronto"},
+          "él_ella_usted": {"form": "llegará", "example": "Él llegará después"},
+          "nosotros": {"form": "llegaremos", "example": "Nosotros llegaremos juntos"},
+          "ustedes_ellos_ellas": {"form": "llegarán", "example": "Ellos llegarán al final"}
+        }
+      },
+      "tips": "Regular -ar verb. Note: gu→gü for pronunciation (llegué, not llegé). Essential for travel/arrival situations."
+    },
+    {
+      "id": "v018",
+      "infinitive": "Salir",
+      "english": "To leave/go out",
+      "conjugations": {
+        "present": {
+          "yo": {"form": "salgo", "example": "Yo salgo a las cinco"},
+          "tú": {"form": "sales", "example": "Tú sales con amigos"},
+          "él_ella_usted": {"form": "sale", "example": "Él sale de trabajar"},
+          "nosotros": {"form": "salimos", "example": "Nosotros salimos juntos"},
+          "ustedes_ellos_ellas": {"form": "salen", "example": "Ellos salen temprano"}
+        },
+        "preterite": {
+          "yo": {"form": "salí", "example": "Yo salí de casa"},
+          "tú": {"form": "saliste", "example": "Tú saliste rápido"},
+          "él_ella_usted": {"form": "salió", "example": "Ella salió sin decir adiós"},
+          "nosotros": {"form": "salimos", "example": "Nosotros salimos tarde"},
+          "ustedes_ellos_ellas": {"form": "salieron", "example": "Ellos salieron primero"}
+        },
+        "future": {
+          "yo": {"form": "saldré", "example": "Yo saldré mañana"},
+          "tú": {"form": "saldrás", "example": "Tú saldrás después"},
+          "él_ella_usted": {"form": "saldrá", "example": "Él saldrá en la tarde"},
+          "nosotros": {"form": "saldremos", "example": "Nosotros saldremos juntos"},
+          "ustedes_ellos_ellas": {"form": "saldrán", "example": "Ellos saldrán al amanecer"}
+        }
+      },
+      "tips": "Irregular stem sal- in future (saldr-). Used for leaving, exiting, going out. 'Salir con' = to date someone."
+    }
+  ]
+}
