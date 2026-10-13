@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "category": "References",
+    "description": "Essential reference materials for daily life",
+    "sections": ["Measurements", "Time", "Numbers", "Money"]
+  },
+  "measurements": {
+    "weight": [
+      {"spanish": "gramo", "english": "gram", "abbreviation": "g"},
+      {"spanish": "kilogramo", "english": "kilogram", "abbreviation": "kg"},
+      {"spanish": "libra", "english": "pound", "abbreviation": "lb"},
+      {"spanish": "onza", "english": "ounce", "abbreviation": "oz"}
+    ],
+    "volume": [
+      {"spanish": "mililitro", "english": "milliliter", "abbreviation": "ml"},
+      {"spanish": "litro", "english": "liter", "abbreviation": "l"},
+      {"spanish": "taza", "english": "cup"},
+      {"spanish": "cucharada", "english": "tablespoon"},
+      {"spanish": "cucharadita", "english": "teaspoon"}
+    ],
+    "length": [
+      {"spanish": "centímetro", "english": "centimeter", "abbreviation": "cm"},
+      {"spanish": "metro", "english": "meter", "abbreviation": "m"},
+      {"spanish": "kilómetro", "english": "kilometer", "abbreviation": "km"},
+      {"spanish": "pulgada", "english": "inch"},
+      {"spanish": "pie", "english": "foot"}
+    ],
+    "fractions": [
+      {"spanish": "un cuarto", "english": "one quarter", "fraction": "1/4"},
+      {"spanish": "un medio", "english": "one half", "fraction": "1/2"},
+      {"spanish": "tres cuartos", "english": "three quarters", "fraction": "3/4"},
+      {"spanish": "un tercio", "english": "one third", "fraction": "1/3"},
+      {"spanish": "dos tercios", "english": "two thirds", "fraction": "2/3"}
+    ]
+  },
+  "time": {
+    "days": [
+      {"spanish": "lunes", "english": "Monday"},
+      {"spanish": "martes", "english": "Tuesday"},
+      {"spanish": "miércoles", "english": "Wednesday"},
+      {"spanish": "jueves", "english": "Thursday"},
+      {"spanish": "viernes", "english": "Friday"},
+      {"spanish": "sábado", "english": "Saturday"},
+      {"spanish": "domingo", "english": "Sunday"}
+    ],
+    "months": [
+      {"spanish": "enero", "english": "January"},
+      {"spanish": "febrero", "english": "February"},
+      {"spanish": "marzo", "english": "March"},
+      {"spanish": "abril", "english": "April"},
+      {"spanish": "mayo", "english": "May"},
+      {"spanish": "junio", "english": "June"},
+      {"spanish": "julio", "english": "July"},
+      {"spanish": "agosto", "english": "August"},
+      {"spanish": "septiembre", "english": "September"},
+      {"spanish": "octubre", "english": "October"},
+      {"spanish": "noviembre", "english": "November"},
+      {"spanish": "diciembre", "english": "December"}
+    ],
+    "seasons": [
+      {"spanish": "primavera", "english": "spring"},
+      {"spanish": "verano", "english": "summer"},
+      {"spanish": "otoño", "english": "autumn"},
+      {"spanish": "invierno", "english": "winter"}
+    ],
+    "time_expressions": [
+      {"spanish": "mediodía", "english": "noon"},
+      {"spanish": "medianoche", "english": "midnight"},
+      {"spanish": "amanecer", "english": "sunrise"},
+      {"spanish": "atardecer", "english": "sunset"},
+      {"spanish": "madrugada", "english": "early morning"},
+      {"spanish": "la mañana", "english": "morning"},
+      {"spanish": "la tarde", "english": "afternoon"},
+      {"spanish": "la noche", "english": "evening/night"}
+    ],
+    "frequency": [
+      {"spanish": "siempre", "english": "always"},
+      {"spanish": "a menudo", "english": "often"},
+      {"spanish": "a veces", "english": "sometimes"},
+      {"spanish": "rara vez", "english": "rarely"},
+      {"spanish": "nunca", "english": "never"},
+      {"spanish": "diariamente", "english": "daily"},
+      {"spanish": "semanalmente", "english": "weekly"},
+      {"spanish": "mensualmente", "english": "monthly"}
+    ]
+  },
+  "numbers": {
+    "basic": [
+      {"spanish": "cero", "english": "zero", "number": 0},
+      {"spanish": "uno", "english": "one", "number": 1},
+      {"spanish": "dos", "english": "two", "number": 2},
+      {"spanish": "tres", "english": "three", "number": 3},
+      {"spanish": "cuatro", "english": "four", "number": 4},
+      {"spanish": "cinco", "english": "five", "number": 5},
+      {"spanish": "seis", "english": "six", "number": 6},
+      {"spanish": "siete", "english": "seven", "number": 7},
+      {"spanish": "ocho", "english": "eight", "number": 8},
+      {"spanish": "nueve", "english": "nine", "number": 9},
+      {"spanish": "diez", "english": "ten", "number": 10}
+    ],
+    "tens": [
+      {"spanish": "diez", "english": "ten", "number": 10},
+      {"spanish": "veinte", "english": "twenty", "number": 20},
+      {"spanish": "treinta", "english": "thirty", "number": 30},
+      {"spanish": "cuarenta", "english": "forty", "number": 40},
+      {"spanish": "cincuenta", "english": "fifty", "number": 50},
+      {"spanish": "sesenta", "english": "sixty", "number": 60},
+      {"spanish": "setenta", "english": "seventy", "number": 70},
+      {"spanish": "ochenta", "english": "eighty", "number": 80},
+      {"spanish": "noventa", "english": "ninety", "number": 90}
+    ],
+    "higher": [
+      {"spanish": "cien", "english": "hundred", "number": 100},
+      {"spanish": "mil", "english": "thousand", "number": 1000},
+      {"spanish": "un millón", "english": "one million", "number": 1000000}
+    ],
+    "ordinals": [
+      {"spanish": "primero", "english": "first"},
+      {"spanish": "segundo", "english": "second"},
+      {"spanish": "tercero", "english": "third"},
+      {"spanish": "cuarto", "english": "fourth"},
+      {"spanish": "quinto", "english": "fifth"},
+      {"spanish": "sexto", "english": "sixth"},
+      {"spanish": "séptimo", "english": "seventh"},
+      {"spanish": "octavo", "english": "eighth"},
+      {"spanish": "noveno", "english": "ninth"},
+      {"spanish": "décimo", "english": "tenth"}
+    ]
+  },
+  "money": {
+    "currencies": [
+      {
+        "name": "Mexican Peso",
+        "spanish": "Peso mexicano",
+        "symbol": "$",
+        "code": "MXN",
+        "common_usage": "Used throughout Mexico"
+      },
+      {
+        "name": "US Dollar",
+        "spanish": "Dólar estadounidense",
+        "symbol": "$",
+        "code": "USD",
+        "common_usage": "Accepted in tourist areas"
+      },
+      {
+        "name": "Canadian Dollar",
+        "spanish": "Dólar canadiense",
+        "symbol": "$",
+        "code": "CAD",
+        "common_usage": "Exchange at banks/currency offices"
+      }
+    ],
+    "payment_methods": [
+      {"spanish": "efectivo", "english": "cash"},
+      {"spanish": "tarjeta de crédito", "english": "credit card"},
+      {"spanish": "tarjeta de débito", "english": "debit card"},
+      {"spanish": "cheque", "english": "check"},
+      {"spanish": "transferencia bancaria", "english": "bank transfer"},
+      {"spanish": "billetera digital", "english": "digital wallet"}
+    ],
+    "banking": [
+      {"spanish": "banco", "english": "bank"},
+      {"spanish": "cajero automático", "english": "ATM"},
+      {"spanish": "depósito", "english": "deposit"},
+      {"spanish": "retiro", "english": "withdrawal"},
+      {"spanish": "cuenta corriente", "english": "checking account"},
+      {"spanish": "cuenta de ahorros", "english": "savings account"},
+      {"spanish": "préstamo", "english": "loan"},
+      {"spanish": "interés", "english": "interest"},
+      {"spanish": "comisión", "english": "fee"}
+    ],
+    "shopping": [
+      {"spanish": "precio", "english": "price"},
+      {"spanish": "descuento", "english": "discount"},
+      {"spanish": "oferta", "english": "special offer"},
+      {"spanish": "rebaja", "english": "sale"},
+      {"spanish": "propina", "english": "tip"},
+      {"spanish": "impuesto", "english": "tax"},
+      {"spanish": "total", "english": "total"},
+      {"spanish": "cambio", "english": "change"}
+    ]
+  }
+}
