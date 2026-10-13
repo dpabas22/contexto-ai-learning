@@ -15,6 +15,10 @@ from gtts import gTTS
 import io
 import pandas as pd
 from pathlib import Path
+from spanish_tools import (
+    number_to_spanish, number_to_english, clock_svg,
+    time_to_spanish, time_variants, MAX_NUMBER,
+)
 
 # ============================================================================
 # CONFIGURATION & SETUP
@@ -461,42 +465,193 @@ with tabs[6]:  # Measurements
             for item in refs["measurements"]["volume"]:
                 st.write(f"{item['spanish']} = {item['english']}")
 
+def show_table(items, columns):
+    """Show a list of dicts as a compact table (only the columns that exist)."""
+    frame = pd.DataFrame(items)
+    keep = [c for c in columns if c in frame.columns]
+    st.dataframe(frame[keep], hide_index=True)
+
+
 with tabs[7]:  # Time
-    st.header("⏰ Time Expressions")
+    st.header("⏰ Time")
     if "references" in all_data["content"]:
         refs = all_data["content"]["references"]["time"]
-        
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.subheader("Days")
-            for day in refs["days"]:
-                st.write(f"{day['spanish']} - {day['english']}")
-        
-        with col2:
-            st.subheader("Months")
-            for month in refs["months"][:6]:
-                st.write(f"{month['spanish']} - {month['english']}")
-        
-        with col3:
-            st.subheader("Time of Day")
-            for expr in refs["time_expressions"]:
-                st.write(f"{expr['spanish']} - {expr['english']}")
+        time_tab1, time_tab2, time_tab3 = st.tabs(
+            ["🕐 Telling time", "🎛️ Try any time", "📅 Days & months"]
+        )
+
+        with time_tab1:
+            st.caption("⚠️ " + refs.get("source", "") + ". Usage varies by region.")
+            st.subheader("Asking and answering")
+            for i, phrase in enumerate(refs.get("ask_and_answer", [])):
+                st.write(f"**{phrase['spanish']}** — {phrase['english']}")
+                audio_button(phrase["spanish"], f"tq_{i}")
+
+            st.divider()
+            st.subheader("Clock examples")
+            for ex in refs.get("clock_examples", []):
+                col_clock, col_text = st.columns([1, 3])
+                with col_clock:
+                    st.image(clock_svg(ex["hour24"], ex["minute"], size=130), width=130)
+                with col_text:
+                    st.markdown(f"**{ex['display']}**")
+                    st.write(ex["spanish"])
+                    audio_button(ex["spanish"], f"clk_{ex['hour24']}_{ex['minute']}")
+                    for alt in ex["alternatives"]:
+                        st.caption(f"Also: {alt}")
+                    st.caption(ex["english"])
+
+            st.divider()
+            st.subheader("Rules in a nutshell")
+            for rule in refs.get("rules", []):
+                with st.expander(rule["title"]):
+                    st.write(rule["spanish"])
+                    st.caption(rule["english"])
+
+        with time_tab2:
+            st.write("Pick a time and see the clock and how to say it.")
+            col_h, col_m, col_p = st.columns(3)
+            hour12 = col_h.selectbox("Hour", list(range(1, 13)), index=2, key="pick_hour")
+            minute = int(col_m.number_input("Minute", min_value=0, max_value=59,
+                                            value=45, step=1, key="pick_minute"))
+            ampm = col_p.radio("a. m. / p. m.", ["a. m.", "p. m."], index=1,
+                               horizontal=True, key="pick_ampm")
+            hour24 = (hour12 % 12) + (12 if ampm == "p. m." else 0)
+
+            col_clock, col_text = st.columns([1, 2])
+            with col_clock:
+                st.image(clock_svg(hour24, minute, size=180), width=180)
+            with col_text:
+                phrase = time_to_spanish(hour24, minute)
+                st.success(phrase)
+                audio_button(phrase, f"pick_{hour24}_{minute}")
+                for alt in time_variants(hour24, minute):
+                    st.caption(f"Also: {alt}")
+
+        with time_tab3:
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.subheader("Days")
+                for day in refs["days"]:
+                    st.write(f"{day['spanish']} - {day['english']}")
+            with col2:
+                st.subheader("Months")
+                for month in refs["months"]:
+                    st.write(f"{month['spanish']} - {month['english']}")
+            with col3:
+                st.subheader("Time of day")
+                for expr in refs["time_expressions"]:
+                    st.write(f"{expr['spanish']} - {expr['english']}")
+                st.subheader("Seasons")
+                for season in refs.get("seasons", []):
+                    st.write(f"{season['spanish']} - {season['english']}")
 
 with tabs[8]:  # Numbers
-    st.header("🔢 Numbers")
+    st.header("🔢 Numbers & Math")
     if "references" in all_data["content"]:
         refs = all_data["content"]["references"]["numbers"]
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            st.subheader("Basic (0-10)")
-            for num in refs["basic"]:
-                st.write(f"{num['spanish']} = {num['number']}")
-        
-        with col2:
-            st.subheader("Tens")
-            for num in refs["tens"]:
-                st.write(f"{num['spanish']} = {num['number']}")
+        math_refs = all_data["content"]["references"].get("math", {})
+        num_tab1, num_tab2, num_tab3, num_tab4 = st.tabs(
+            ["1️⃣ Counting", "💯 Hundreds to millions", "🔊 Say any number", "➕ Math phrases"]
+        )
+
+        with num_tab1:
+            st.caption("⚠️ " + refs.get("source", ""))
+            col1, col2 = st.columns(2)
+            with col1:
+                st.subheader("0-10")
+                show_table(refs["basic"], ["number", "spanish", "english"])
+                st.subheader("11-29")
+                show_table(refs.get("teens_twenties", []), ["number", "spanish", "english"])
+            with col2:
+                st.subheader("Tens")
+                show_table(refs["tens"], ["number", "spanish", "english"])
+                st.subheader("Ordinals")
+                show_table(refs.get("ordinals", []), ["spanish", "english"])
+
+        with num_tab2:
+            st.subheader("Hundreds")
+            show_table(refs.get("hundreds", []), ["number", "spanish", "english"])
+            st.subheader("Thousands")
+            show_table(refs.get("thousands", []), ["number", "spanish", "english"])
+            st.subheader("Millions")
+            show_table(refs.get("millions", []), ["number", "spanish", "english"])
+
+            st.divider()
+            st.subheader("Prices out loud")
+            for i, item in enumerate(refs.get("money_examples", [])):
+                st.write(f"**{item['price']}** → {item['spanish']}")
+                audio_button(item["spanish"], f"money_{i}")
+
+            st.divider()
+            st.subheader("Rules and traps")
+            for rule in refs.get("rules", []):
+                with st.expander(rule["title"]):
+                    st.write(rule["spanish"])
+                    st.caption(rule["english"])
+
+        with num_tab3:
+            st.write("Type any number and see how to say it.")
+            value = int(st.number_input(
+                f"Number (0 to {MAX_NUMBER:,})", min_value=0, max_value=MAX_NUMBER,
+                value=1250, step=1, key="say_number"))
+            modes = ["On its own", "Before a masculine noun (un peso)",
+                     "Before a feminine noun (una persona)"]
+            mode = st.radio("How will you use it?", modes, key="say_mode")
+            mode_index = modes.index(mode)
+
+            if mode_index == 0:
+                words = number_to_spanish(value)
+            else:
+                gender = "m" if mode_index == 1 else "f"
+                words = number_to_spanish(value, gender=gender, before_noun=True)
+            st.success(words)
+            audio_button(words, f"say_{value}_{mode_index}")
+            st.caption(f"{value:,} = {number_to_english(value)}")
+
+            if mode_index != 0 and value > 0:
+                singular, plural = ("peso", "pesos") if mode_index == 1 else ("persona", "personas")
+                noun = singular if value == 1 else plural
+                connector = " de" if value >= 1_000_000 and value % 1_000_000 == 0 else ""
+                st.caption(f"With a noun: {words}{connector} {noun}")
+
+        with num_tab4:
+            st.caption("⚠️ " + math_refs.get("source", ""))
+            st.subheader("The four operations")
+            show_table(math_refs.get("operations", []),
+                       ["symbol", "spanish", "also", "verb", "noun", "english"])
+
+            st.divider()
+            st.subheader("Say the sum")
+            for i, ex in enumerate(math_refs.get("examples", [])):
+                st.write(f"**{ex['expression']}**")
+                st.write(ex["spanish"])
+                audio_button(ex["spanish"], f"math_{i}")
+                if ex.get("note"):
+                    st.caption(ex["note"])
+
+            st.divider()
+            st.subheader("Greater, less, equal")
+            for i, item in enumerate(math_refs.get("comparisons", [])):
+                st.write(f"**{item['symbol']}**  {item['spanish']} — {item['english']}")
+                st.caption(item["example"])
+
+            st.divider()
+            st.subheader("Shopping math")
+            for i, item in enumerate(math_refs.get("shopping_examples", [])):
+                st.write(item["spanish"])
+                st.caption(item["math"])
+                audio_button(item["spanish"], f"shopmath_{i}")
+
+            st.divider()
+            st.subheader("Useful questions")
+            for i, item in enumerate(math_refs.get("questions", [])):
+                st.write(f"**{item['spanish']}** — {item['english']}")
+                audio_button(item["spanish"], f"mq_{i}")
+
+            st.divider()
+            st.subheader("Fractions and percent")
+            show_table(math_refs.get("fractions_percent", []), ["spanish", "english"])
 
 with tabs[9]:  # Money
     st.header("💰 Money & Currencies")
