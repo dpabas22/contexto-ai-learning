@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "category": "Expanded Vocabulary",
+    "description": "Scenario-specific vocabulary for advanced expat situations",
+    "total_items": 550,
+    "categories": ["Restaurants", "Shopping", "Banking", "Medical", "Neighborhoods"]
+  },
+  "restaurants": {
+    "menu_items": [
+      {"spanish": "tacos al pastor", "english": "marinated pork tacos", "pronunciation": "TAH-kos ahl pahs-TOR"},
+      {"spanish": "enchiladas verdes", "english": "green enchiladas", "pronunciation": "ehn-chee-LAH-dahs BEHR-dehs"},
+      {"spanish": "chile relleno", "english": "stuffed poblano pepper", "pronunciation": "CHEE-leh reh-YEH-noh"},
+      {"spanish": "mole negro", "english": "dark chocolate chili sauce", "pronunciation": "MOH-leh NEH-groh"},
+      {"spanish": "ceviche", "english": "marinated seafood", "pronunciation": "seh-BEE-cheh"},
+      {"spanish": "quesadilla", "english": "cheese-filled tortilla", "pronunciation": "keh-sah-DEE-yah"},
+      {"spanish": "pozole", "english": "hominy soup", "pronunciation": "poh-SOH-leh"},
+      {"spanish": "tamales", "english": "corn dough packets", "pronunciation": "tah-MAH-lehs"},
+      {"spanish": "chiles en nogada", "english": "poblano peppers in walnut sauce", "pronunciation": "CHEE-lehs ehn noh-GAH-dah"},
+      {"spanish": "barbacoa", "english": "slow-cooked beef", "pronunciation": "bar-bah-KOH-ah"},
+      {"spanish": "carnitas", "english": "slow-cooked pork", "pronunciation": "kar-NEE-tahs"},
+      {"spanish": "chiles toreados", "english": "fried poblano peppers", "pronunciation": "CHEE-lehs toh-reh-AH-dos"},
+      {"spanish": "sopa de tortilla", "english": "tortilla soup", "pronunciation": "SOH-pah deh tor-TEE-yah"},
+      {"spanish": "chile poblano", "english": "poblano pepper", "pronunciation": "CHEE-leh poh-BLAH-noh"},
+      {"spanish": "huevos rancheros", "english": "ranch-style eggs", "pronunciation": "WEH-bos rahn-CHEH-ros"},
+      {"spanish": "chiles de árbol", "english": "dried red chiles", "pronunciation": "CHEE-lehs deh AHR-bohl"},
+      {"spanish": "salsa", "english": "sauce", "pronunciation": "SAHL-sah"},
+      {"spanish": "guacamole", "english": "avocado dip", "pronunciation": "gwah-kah-MOH-leh"},
+      {"spanish": "frijoles", "english": "beans", "pronunciation": "free-HOH-lehs"},
+      {"spanish": "arroz", "english": "rice", "pronunciation": "ah-RROS"}
+    ],
+    "cooking_methods": [
+      {"spanish": "asado", "english": "roasted"},
+      {"spanish": "frito", "english": "fried"},
+      {"spanish": "al vapor", "english": "steamed"},
+      {"spanish": "a la parrilla", "english": "grilled"},
+      {"spanish": "cocido", "english": "cooked"},
+      {"spanish": "crudo", "english": "raw"},
+      {"spanish": "marinado", "english": "marinated"}
+    ],
+    "drinks": [
+      {"spanish": "agua", "english": "water"},
+      {"spanish": "agua fresca", "english": "refreshing fruit drink"},
+      {"spanish": "horchata", "english": "rice milk drink"},
+      {"spanish": "licuado", "english": "smoothie"},
+      {"spanish": "cerveza", "english": "beer"},
+      {"spanish": "vino tinto", "english": "red wine"},
+      {"spanish": "vino blanco", "english": "white wine"},
+      {"spanish": "mezcal", "english": "agave spirit"},
+      {"spanish": "tequila", "english": "tequila"},
+      {"spanish": "café", "english": "coffee"},
+      {"spanish": "té", "english": "tea"},
+      {"spanish": "chocolate", "english": "hot chocolate"},
+      {"spanish": "jugo", "english": "juice"},
+      {"spanish": "refresco", "english": "soft drink"}
+    ],
+    "utensils": [
+      {"spanish": "tenedor", "english": "fork"},
+      {"spanish": "cuchillo", "english": "knife"},
+      {"spanish": "cuchara", "english": "spoon"},
+      {"spanish": "vaso", "english": "glass"},
+      {"spanish": "plato", "english": "plate"},
+      {"spanish": "taza", "english": "cup"},
+      {"spanish": "servilleta", "english": "napkin"}
+    ]
+  },
+  "shopping": {
+    "clothing": [
+      {"spanish": "camisa", "english": "shirt", "type": "clothing"},
+      {"spanish": "blusa", "english": "blouse"},
+      {"spanish": "pantalón", "english": "pants"},
+      {"spanish": "falda", "english": "skirt"},
+      {"spanish": "vestido", "english": "dress"},
+      {"spanish": "suéter", "english": "sweater"},
+      {"spanish": "chaqueta", "english": "jacket"},
+      {"spanish": "abrigo", "english": "coat"},
+      {"spanish": "zapatos", "english": "shoes"},
+      {"spanish": "botas", "english": "boots"},
+      {"spanish": "medias", "english": "socks"},
+      {"spanish": "cinturón", "english": "belt"},
+      {"spanish": "gorro", "english": "hat"},
+      {"spanish": "bufanda", "english": "scarf"},
+      {"spanish": "guantes", "english": "gloves"}
+    ],
+    "sizes": [
+      {"spanish": "pequeño", "english": "small", "abbreviation": "S"},
+      {"spanish": "mediano", "english": "medium", "abbreviation": "M"},
+      {"spanish": "grande", "english": "large", "abbreviation": "L"},
+      {"spanish": "muy grande", "english": "extra large", "abbreviation": "XL"},
+      {"spanish": "talla", "english": "size"}
+    ],
+    "colors": [
+      {"spanish": "rojo", "english": "red"},
+      {"spanish": "azul", "english": "blue"},
+      {"spanish": "verde", "english": "green"},
+      {"spanish": "amarillo", "english": "yellow"},
+      {"spanish": "negro", "english": "black"},
+      {"spanish": "blanco", "english": "white"},
+      {"spanish": "gris", "english": "gray"},
+      {"spanish": "rosa", "english": "pink"},
+      {"spanish": "naranja", "english": "orange"},
+      {"spanish": "púrpura", "english": "purple"},
+      {"spanish": "marrón", "english": "brown"}
+    ],
+    "fabrics": [
+      {"spanish": "algodón", "english": "cotton"},
+      {"spanish": "seda", "english": "silk"},
+      {"spanish": "lana", "english": "wool"},
+      {"spanish": "poliéster", "english": "polyester"},
+      {"spanish": "lino", "english": "linen"},
+      {"spanish": "denim", "english": "denim"}
+    ],
+    "return_policy": [
+      {"spanish": "cambio", "english": "exchange"},
+      {"spanish": "reembolso", "english": "refund"},
+      {"spanish": "devolución", "english": "return"},
+      {"spanish": "garantía", "english": "warranty"},
+      {"spanish": "defecto", "english": "defect"}
+    ]
+  },
+  "banking": {
+    "account_types": [
+      {"spanish": "cuenta de ahorros", "english": "savings account"},
+      {"spanish": "cuenta corriente", "english": "checking account"},
+      {"spanish": "cuenta de inversión", "english": "investment account"},
+      {"spanish": "cuenta de nómina", "english": "payroll account"}
+    ],
+    "transactions": [
+      {"spanish": "depósito", "english": "deposit"},
+      {"spanish": "retiro", "english": "withdrawal"},
+      {"spanish": "transferencia", "english": "transfer"},
+      {"spanish": "pago", "english": "payment"},
+      {"spanish": "recepción", "english": "receipt"},
+      {"spanish": "estado de cuenta", "english": "bank statement"},
+      {"spanish": "saldo", "english": "balance"},
+      {"spanish": "transacción", "english": "transaction"}
+    ],
+    "fees_charges": [
+      {"spanish": "comisión", "english": "fee"},
+      {"spanish": "interés", "english": "interest"},
+      {"spanish": "cargos por mantenimiento", "english": "maintenance fees"},
+      {"spanish": "cargo por sobregiro", "english": "overdraft fee"},
+      {"spanish": "tasa de interés", "english": "interest rate"}
+    ],
+    "credit": [
+      {"spanish": "préstamo", "english": "loan"},
+      {"spanish": "hipoteca", "english": "mortgage"},
+      {"spanish": "tarjeta de crédito", "english": "credit card"},
+      {"spanish": "línea de crédito", "english": "line of credit"},
+      {"spanish": "tasa de interés", "english": "interest rate"},
+      {"spanish": "pago mensual", "english": "monthly payment"}
+    ]
+  },
+  "medical": {
+    "symptoms": [
+      {"spanish": "dolor de cabeza", "english": "headache"},
+      {"spanish": "fiebre", "english": "fever"},
+      {"spanish": "tos", "english": "cough"},
+      {"spanish": "congestión nasal", "english": "nasal congestion"},
+      {"spanish": "dolor de garganta", "english": "sore throat"},
+      {"spanish": "náusea", "english": "nausea"},
+      {"spanish": "vómito", "english": "vomiting"},
+      {"spanish": "diarrea", "english": "diarrhea"},
+      {"spanish": "estreñimiento", "english": "constipation"},
+      {"spanish": "mareo", "english": "dizziness"},
+      {"spanish": "fatiga", "english": "fatigue"},
+      {"spanish": "dolor de espalda", "english": "back pain"},
+      {"spanish": "dolor de pecho", "english": "chest pain"},
+      {"spanish": "dificultad para respirar", "english": "difficulty breathing"}
+    ],
+    "body_parts": [
+      {"spanish": "cabeza", "english": "head"},
+      {"spanish": "cara", "english": "face"},
+      {"spanish": "ojo", "english": "eye"},
+      {"spanish": "oído", "english": "ear"},
+      {"spanish": "nariz", "english": "nose"},
+      {"spanish": "boca", "english": "mouth"},
+      {"spanish": "garganta", "english": "throat"},
+      {"spanish": "cuello", "english": "neck"},
+      {"spanish": "pecho", "english": "chest"},
+      {"spanish": "espalda", "english": "back"},
+      {"spanish": "estómago", "english": "stomach"},
+      {"spanish": "hígado", "english": "liver"},
+      {"spanish": "riñón", "english": "kidney"},
+      {"spanish": "brazo", "english": "arm"},
+      {"spanish": "mano", "english": "hand"},
+      {"spanish": "pierna", "english": "leg"},
+      {"spanish": "pie", "english": "foot"},
+      {"spanish": "corazón", "english": "heart"},
+      {"spanish": "pulmón", "english": "lung"}
+    ],
+    "medications": [
+      {"spanish": "aspirina", "english": "aspirin"},
+      {"spanish": "paracetamol", "english": "acetaminophen"},
+      {"spanish": "ibuprofeno", "english": "ibuprofen"},
+      {"spanish": "antibiótico", "english": "antibiotic"},
+      {"spanish": "antialérgico", "english": "antihistamine"},
+      {"spanish": "jarabe para la tos", "english": "cough syrup"},
+      {"spanish": "pomada", "english": "ointment"},
+      {"spanish": "inyección", "english": "injection"},
+      {"spanish": "píldora", "english": "pill"},
+      {"spanish": "cápsula", "english": "capsule"}
+    ],
+    "healthcare_facilities": [
+      {"spanish": "hospital", "english": "hospital"},
+      {"spanish": "clínica", "english": "clinic"},
+      {"spanish": "consultorio", "english": "doctor's office"},
+      {"spanish": "farmacia", "english": "pharmacy"},
+      {"spanish": "emergencia", "english": "emergency room"},
+      {"spanish": "sala de espera", "english": "waiting room"},
+      {"spanish": "quirófano", "english": "operating room"}
+    ]
+  },
+  "neighborhoods": {
+    "querétaro_areas": [
+      {"spanish": "Centro Histórico", "english": "Historic Center", "characteristics": "Colonial buildings, plazas, restaurants"},
+      {"spanish": "Av. Peñuelas", "english": "Peñuelas Avenue", "characteristics": "Markets, residential"},
+      {"spanish": "Juriquilla", "english": "Juriquilla", "characteristics": "Upscale, modern, shopping centers"},
+      {"spanish": "Colinas del Cimatario", "english": "Cimatario Hills", "characteristics": "Residential, parks"},
+      {"spanish": "Tecnológico", "english": "Tecnológico", "characteristics": "University area, student zone"},
+      {"spanish": "Cerro de las Campanas", "english": "Bell Hill", "characteristics": "Historic site, views"},
+      {"spanish": "Buenavista", "english": "Buenavista", "characteristics": "Traditional, churches"},
+      {"spanish": "San Sebastián", "english": "San Sebastián", "characteristics": "Market area, local businesses"}
+    ],
+    "landmarks": [
+      {"spanish": "Zócalo", "english": "Main square"},
+      {"spanish": "Catedral Metropolitana", "english": "Metropolitan Cathedral"},
+      {"spanish": "Iglesia de Santa Rosa", "english": "Church of Santa Rosa"},
+      {"spanish": "Convento de la Cruz", "english": "Convent of the Cross"},
+      {"spanish": "Templo de la Congregación", "english": "Congregation Temple"},
+      {"spanish": "Cerro de las Campanas", "english": "Bell Hill Monument"},
+      {"spanish": "Fuente de Neptuno", "english": "Neptune Fountain"},
+      {"spanish": "Teatro de la República", "english": "Theater of the Republic"}
+    ],
+    "shopping_areas": [
+      {"spanish": "Mercado de Abastos", "english": "Public Market"},
+      {"spanish": "Zona de Galerías", "english": "Gallery District"},
+      {"spanish": "Santa María", "english": "Santa María Shopping Area"},
+      {"spanish": "Soriana", "english": "Soriana Supermarket"},
+      {"spanish": "Walmart", "english": "Walmart"},
+      {"spanish": "Costco", "english": "Costco"},
+      {"spanish": "Sams Club", "english": "Sam's Club"},
+      {"spanish": "Tiendas locales", "english": "Local shops"}
+    ],
+    "transportation": [
+      {"spanish": "estación de autobuses", "english": "bus station"},
+      {"spanish": "ruta de autobús", "english": "bus route"},
+      {"spanish": "parada de autobús", "english": "bus stop"},
+      {"spanish": "taxi", "english": "taxi"},
+      {"spanish": "Uber", "english": "Uber ride"},
+      {"spanish": "bicicleta", "english": "bicycle"},
+      {"spanish": "carro", "english": "car"},
+      {"spanish": "estacionamiento", "english": "parking"}
+    ]
+  }
+}
