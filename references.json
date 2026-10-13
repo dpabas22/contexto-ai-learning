@@ -3,130 +3,999 @@
     "version": "2.0",
     "category": "References",
     "description": "Essential reference materials for daily life",
-    "sections": ["Measurements", "Time", "Numbers", "Money"]
+    "sections": [
+      "Measurements",
+      "Time",
+      "Numbers",
+      "Math",
+      "Money"
+    ]
   },
   "measurements": {
     "weight": [
-      {"spanish": "gramo", "english": "gram", "abbreviation": "g"},
-      {"spanish": "kilogramo", "english": "kilogram", "abbreviation": "kg"},
-      {"spanish": "libra", "english": "pound", "abbreviation": "lb"},
-      {"spanish": "onza", "english": "ounce", "abbreviation": "oz"}
+      {
+        "spanish": "gramo",
+        "english": "gram",
+        "abbreviation": "g"
+      },
+      {
+        "spanish": "kilogramo",
+        "english": "kilogram",
+        "abbreviation": "kg"
+      },
+      {
+        "spanish": "libra",
+        "english": "pound",
+        "abbreviation": "lb"
+      },
+      {
+        "spanish": "onza",
+        "english": "ounce",
+        "abbreviation": "oz"
+      }
     ],
     "volume": [
-      {"spanish": "mililitro", "english": "milliliter", "abbreviation": "ml"},
-      {"spanish": "litro", "english": "liter", "abbreviation": "l"},
-      {"spanish": "taza", "english": "cup"},
-      {"spanish": "cucharada", "english": "tablespoon"},
-      {"spanish": "cucharadita", "english": "teaspoon"}
+      {
+        "spanish": "mililitro",
+        "english": "milliliter",
+        "abbreviation": "ml"
+      },
+      {
+        "spanish": "litro",
+        "english": "liter",
+        "abbreviation": "l"
+      },
+      {
+        "spanish": "taza",
+        "english": "cup"
+      },
+      {
+        "spanish": "cucharada",
+        "english": "tablespoon"
+      },
+      {
+        "spanish": "cucharadita",
+        "english": "teaspoon"
+      }
     ],
     "length": [
-      {"spanish": "centímetro", "english": "centimeter", "abbreviation": "cm"},
-      {"spanish": "metro", "english": "meter", "abbreviation": "m"},
-      {"spanish": "kilómetro", "english": "kilometer", "abbreviation": "km"},
-      {"spanish": "pulgada", "english": "inch"},
-      {"spanish": "pie", "english": "foot"}
+      {
+        "spanish": "centímetro",
+        "english": "centimeter",
+        "abbreviation": "cm"
+      },
+      {
+        "spanish": "metro",
+        "english": "meter",
+        "abbreviation": "m"
+      },
+      {
+        "spanish": "kilómetro",
+        "english": "kilometer",
+        "abbreviation": "km"
+      },
+      {
+        "spanish": "pulgada",
+        "english": "inch"
+      },
+      {
+        "spanish": "pie",
+        "english": "foot"
+      }
     ],
     "fractions": [
-      {"spanish": "un cuarto", "english": "one quarter", "fraction": "1/4"},
-      {"spanish": "un medio", "english": "one half", "fraction": "1/2"},
-      {"spanish": "tres cuartos", "english": "three quarters", "fraction": "3/4"},
-      {"spanish": "un tercio", "english": "one third", "fraction": "1/3"},
-      {"spanish": "dos tercios", "english": "two thirds", "fraction": "2/3"}
+      {
+        "spanish": "un cuarto",
+        "english": "one quarter",
+        "fraction": "1/4"
+      },
+      {
+        "spanish": "un medio",
+        "english": "one half",
+        "fraction": "1/2"
+      },
+      {
+        "spanish": "tres cuartos",
+        "english": "three quarters",
+        "fraction": "3/4"
+      },
+      {
+        "spanish": "un tercio",
+        "english": "one third",
+        "fraction": "1/3"
+      },
+      {
+        "spanish": "dos tercios",
+        "english": "two thirds",
+        "fraction": "2/3"
+      }
     ]
   },
   "time": {
     "days": [
-      {"spanish": "lunes", "english": "Monday"},
-      {"spanish": "martes", "english": "Tuesday"},
-      {"spanish": "miércoles", "english": "Wednesday"},
-      {"spanish": "jueves", "english": "Thursday"},
-      {"spanish": "viernes", "english": "Friday"},
-      {"spanish": "sábado", "english": "Saturday"},
-      {"spanish": "domingo", "english": "Sunday"}
+      {
+        "spanish": "lunes",
+        "english": "Monday"
+      },
+      {
+        "spanish": "martes",
+        "english": "Tuesday"
+      },
+      {
+        "spanish": "miércoles",
+        "english": "Wednesday"
+      },
+      {
+        "spanish": "jueves",
+        "english": "Thursday"
+      },
+      {
+        "spanish": "viernes",
+        "english": "Friday"
+      },
+      {
+        "spanish": "sábado",
+        "english": "Saturday"
+      },
+      {
+        "spanish": "domingo",
+        "english": "Sunday"
+      }
     ],
     "months": [
-      {"spanish": "enero", "english": "January"},
-      {"spanish": "febrero", "english": "February"},
-      {"spanish": "marzo", "english": "March"},
-      {"spanish": "abril", "english": "April"},
-      {"spanish": "mayo", "english": "May"},
-      {"spanish": "junio", "english": "June"},
-      {"spanish": "julio", "english": "July"},
-      {"spanish": "agosto", "english": "August"},
-      {"spanish": "septiembre", "english": "September"},
-      {"spanish": "octubre", "english": "October"},
-      {"spanish": "noviembre", "english": "November"},
-      {"spanish": "diciembre", "english": "December"}
+      {
+        "spanish": "enero",
+        "english": "January"
+      },
+      {
+        "spanish": "febrero",
+        "english": "February"
+      },
+      {
+        "spanish": "marzo",
+        "english": "March"
+      },
+      {
+        "spanish": "abril",
+        "english": "April"
+      },
+      {
+        "spanish": "mayo",
+        "english": "May"
+      },
+      {
+        "spanish": "junio",
+        "english": "June"
+      },
+      {
+        "spanish": "julio",
+        "english": "July"
+      },
+      {
+        "spanish": "agosto",
+        "english": "August"
+      },
+      {
+        "spanish": "septiembre",
+        "english": "September"
+      },
+      {
+        "spanish": "octubre",
+        "english": "October"
+      },
+      {
+        "spanish": "noviembre",
+        "english": "November"
+      },
+      {
+        "spanish": "diciembre",
+        "english": "December"
+      }
     ],
     "seasons": [
-      {"spanish": "primavera", "english": "spring"},
-      {"spanish": "verano", "english": "summer"},
-      {"spanish": "otoño", "english": "autumn"},
-      {"spanish": "invierno", "english": "winter"}
+      {
+        "spanish": "primavera",
+        "english": "spring"
+      },
+      {
+        "spanish": "verano",
+        "english": "summer"
+      },
+      {
+        "spanish": "otoño",
+        "english": "autumn"
+      },
+      {
+        "spanish": "invierno",
+        "english": "winter"
+      }
     ],
     "time_expressions": [
-      {"spanish": "mediodía", "english": "noon"},
-      {"spanish": "medianoche", "english": "midnight"},
-      {"spanish": "amanecer", "english": "sunrise"},
-      {"spanish": "atardecer", "english": "sunset"},
-      {"spanish": "madrugada", "english": "early morning"},
-      {"spanish": "la mañana", "english": "morning"},
-      {"spanish": "la tarde", "english": "afternoon"},
-      {"spanish": "la noche", "english": "evening/night"}
+      {
+        "spanish": "mediodía",
+        "english": "noon"
+      },
+      {
+        "spanish": "medianoche",
+        "english": "midnight"
+      },
+      {
+        "spanish": "amanecer",
+        "english": "sunrise"
+      },
+      {
+        "spanish": "atardecer",
+        "english": "sunset"
+      },
+      {
+        "spanish": "madrugada",
+        "english": "early morning"
+      },
+      {
+        "spanish": "la mañana",
+        "english": "morning"
+      },
+      {
+        "spanish": "la tarde",
+        "english": "afternoon"
+      },
+      {
+        "spanish": "la noche",
+        "english": "evening/night"
+      }
     ],
     "frequency": [
-      {"spanish": "siempre", "english": "always"},
-      {"spanish": "a menudo", "english": "often"},
-      {"spanish": "a veces", "english": "sometimes"},
-      {"spanish": "rara vez", "english": "rarely"},
-      {"spanish": "nunca", "english": "never"},
-      {"spanish": "diariamente", "english": "daily"},
-      {"spanish": "semanalmente", "english": "weekly"},
-      {"spanish": "mensualmente", "english": "monthly"}
-    ]
+      {
+        "spanish": "siempre",
+        "english": "always"
+      },
+      {
+        "spanish": "a menudo",
+        "english": "often"
+      },
+      {
+        "spanish": "a veces",
+        "english": "sometimes"
+      },
+      {
+        "spanish": "rara vez",
+        "english": "rarely"
+      },
+      {
+        "spanish": "nunca",
+        "english": "never"
+      },
+      {
+        "spanish": "diariamente",
+        "english": "daily"
+      },
+      {
+        "spanish": "semanalmente",
+        "english": "weekly"
+      },
+      {
+        "spanish": "mensualmente",
+        "english": "monthly"
+      }
+    ],
+    "clock_examples": [
+      {
+        "hour24": 12,
+        "minute": 0,
+        "display": "12:00 p. m.",
+        "spanish": "Es mediodía",
+        "alternatives": [
+          "Son las doce del día"
+        ],
+        "english": "It's noon"
+      },
+      {
+        "hour24": 0,
+        "minute": 0,
+        "display": "12:00 a. m.",
+        "spanish": "Es medianoche",
+        "alternatives": [
+          "Son las doce de la noche"
+        ],
+        "english": "It's midnight"
+      },
+      {
+        "hour24": 12,
+        "minute": 30,
+        "display": "12:30 p. m.",
+        "spanish": "Son las doce y media del día",
+        "alternatives": [
+          "Son las doce treinta del día"
+        ],
+        "english": "It's half past twelve, 12:30 p. m."
+      },
+      {
+        "hour24": 0,
+        "minute": 30,
+        "display": "12:30 a. m.",
+        "spanish": "Son las doce y media de la noche",
+        "alternatives": [
+          "Son las doce treinta de la noche"
+        ],
+        "english": "It's half past midnight, 12:30 a. m."
+      },
+      {
+        "hour24": 13,
+        "minute": 0,
+        "display": "1:00 p. m.",
+        "spanish": "Es la una de la tarde",
+        "alternatives": [
+          "Es la una en punto de la tarde"
+        ],
+        "english": "It's one o'clock, 1:00 p. m."
+      },
+      {
+        "hour24": 1,
+        "minute": 0,
+        "display": "1:00 a. m.",
+        "spanish": "Es la una de la madrugada",
+        "alternatives": [
+          "Es la una en punto de la madrugada"
+        ],
+        "english": "It's one o'clock at night, 1:00 a. m."
+      },
+      {
+        "hour24": 15,
+        "minute": 45,
+        "display": "3:45 p. m.",
+        "spanish": "Son las cuatro menos cuarto de la tarde",
+        "alternatives": [
+          "Son las tres cuarenta y cinco de la tarde",
+          "Faltan quince para las cuatro de la tarde",
+          "Un cuarto para las cuatro de la tarde"
+        ],
+        "english": "It's a quarter to four, 3:45 p. m."
+      },
+      {
+        "hour24": 3,
+        "minute": 45,
+        "display": "3:45 a. m.",
+        "spanish": "Son las cuatro menos cuarto de la madrugada",
+        "alternatives": [
+          "Son las tres cuarenta y cinco de la madrugada",
+          "Faltan quince para las cuatro de la madrugada",
+          "Un cuarto para las cuatro de la madrugada"
+        ],
+        "english": "It's a quarter to four, 3:45 a. m."
+      },
+      {
+        "hour24": 16,
+        "minute": 55,
+        "display": "4:55 p. m.",
+        "spanish": "Son las cinco menos cinco de la tarde",
+        "alternatives": [
+          "Son las cuatro cincuenta y cinco de la tarde",
+          "Faltan cinco para las cinco de la tarde"
+        ],
+        "english": "It's five to five, 4:55 p. m."
+      },
+      {
+        "hour24": 4,
+        "minute": 55,
+        "display": "4:55 a. m.",
+        "spanish": "Son las cinco menos cinco de la madrugada",
+        "alternatives": [
+          "Son las cuatro cincuenta y cinco de la madrugada",
+          "Faltan cinco para las cinco de la madrugada"
+        ],
+        "english": "It's five to five, 4:55 a. m."
+      },
+      {
+        "hour24": 6,
+        "minute": 15,
+        "display": "6:15 a. m.",
+        "spanish": "Son las seis y cuarto de la mañana",
+        "alternatives": [
+          "Son las seis quince de la mañana"
+        ],
+        "english": "It's a quarter past six, 6:15 a. m."
+      },
+      {
+        "hour24": 21,
+        "minute": 5,
+        "display": "9:05 p. m.",
+        "spanish": "Son las nueve y cinco de la noche",
+        "alternatives": [],
+        "english": "It's five past nine, 9:05 p. m."
+      },
+      {
+        "hour24": 22,
+        "minute": 40,
+        "display": "10:40 p. m.",
+        "spanish": "Son las once menos veinte de la noche",
+        "alternatives": [
+          "Son las diez cuarenta de la noche",
+          "Faltan veinte para las once de la noche"
+        ],
+        "english": "It's twenty to eleven, 10:40 p. m."
+      }
+    ],
+    "ask_and_answer": [
+      {
+        "spanish": "¿Qué hora es?",
+        "english": "What time is it?"
+      },
+      {
+        "spanish": "¿Tiene hora?",
+        "english": "Do you have the time?"
+      },
+      {
+        "spanish": "¿A qué hora abre?",
+        "english": "What time does it open?"
+      },
+      {
+        "spanish": "¿A qué hora cierra?",
+        "english": "What time does it close?"
+      },
+      {
+        "spanish": "¿A qué hora sale el autobús?",
+        "english": "What time does the bus leave?"
+      },
+      {
+        "spanish": "¿A qué hora llegamos?",
+        "english": "What time do we arrive?"
+      },
+      {
+        "spanish": "A las tres.",
+        "english": "At three."
+      },
+      {
+        "spanish": "A la una.",
+        "english": "At one."
+      },
+      {
+        "spanish": "Es temprano / Es tarde.",
+        "english": "It's early / It's late."
+      }
+    ],
+    "rules": [
+      {
+        "title": "'Es la una' but 'Son las dos...'",
+        "spanish": "Es la una. Son las dos. Son las doce.",
+        "english": "Only one o'clock is singular."
+      },
+      {
+        "title": "Up to :30 add minutes with 'y'",
+        "spanish": "las tres y diez, las tres y cuarto (:15), las tres y media (:30)",
+        "english": "3:10, 3:15, 3:30"
+      },
+      {
+        "title": "After :30 count back with 'menos' from the NEXT hour",
+        "spanish": "las cuatro menos veinte (3:40), las cuatro menos cuarto (3:45), las cinco menos cinco (4:55)",
+        "english": "3:40, 3:45, 4:55"
+      },
+      {
+        "title": "Latin American 'faltan ... para'",
+        "spanish": "Faltan quince para las cuatro. Faltan cinco para las cinco.",
+        "english": "It's 3:45. It's 4:55."
+      },
+      {
+        "title": "AM and PM are said with the part of the day",
+        "spanish": "de la mañana (6-11), del día (12), de la tarde (1-7 p. m.), de la noche, de la madrugada (1-5 a. m.)",
+        "english": "People rarely say 'a. m.'; they say 'de la mañana', 'de la tarde'... 'De la mañana' is also heard for early hours. Exact use varies by region and person."
+      },
+      {
+        "title": "Schedules often use the 24-hour clock",
+        "spanish": "15:45 → quince cuarenta y cinco; 21:00 → veintiuna horas",
+        "english": "Flights, trains and appointments: 15:45 means 3:45 p. m."
+      },
+      {
+        "title": "Handy extras",
+        "spanish": "en punto (exactly), y pico (a bit after), casi las... (almost)",
+        "english": "Son las tres en punto = it's exactly 3:00."
+      }
+    ],
+    "source": "Generated by tested code (spanish_tools.py); the wording of parts of the day and 'faltan para' needs native-speaker review"
   },
   "numbers": {
     "basic": [
-      {"spanish": "cero", "english": "zero", "number": 0},
-      {"spanish": "uno", "english": "one", "number": 1},
-      {"spanish": "dos", "english": "two", "number": 2},
-      {"spanish": "tres", "english": "three", "number": 3},
-      {"spanish": "cuatro", "english": "four", "number": 4},
-      {"spanish": "cinco", "english": "five", "number": 5},
-      {"spanish": "seis", "english": "six", "number": 6},
-      {"spanish": "siete", "english": "seven", "number": 7},
-      {"spanish": "ocho", "english": "eight", "number": 8},
-      {"spanish": "nueve", "english": "nine", "number": 9},
-      {"spanish": "diez", "english": "ten", "number": 10}
+      {
+        "spanish": "cero",
+        "english": "zero",
+        "number": 0
+      },
+      {
+        "spanish": "uno",
+        "english": "one",
+        "number": 1
+      },
+      {
+        "spanish": "dos",
+        "english": "two",
+        "number": 2
+      },
+      {
+        "spanish": "tres",
+        "english": "three",
+        "number": 3
+      },
+      {
+        "spanish": "cuatro",
+        "english": "four",
+        "number": 4
+      },
+      {
+        "spanish": "cinco",
+        "english": "five",
+        "number": 5
+      },
+      {
+        "spanish": "seis",
+        "english": "six",
+        "number": 6
+      },
+      {
+        "spanish": "siete",
+        "english": "seven",
+        "number": 7
+      },
+      {
+        "spanish": "ocho",
+        "english": "eight",
+        "number": 8
+      },
+      {
+        "spanish": "nueve",
+        "english": "nine",
+        "number": 9
+      },
+      {
+        "spanish": "diez",
+        "english": "ten",
+        "number": 10
+      }
     ],
     "tens": [
-      {"spanish": "diez", "english": "ten", "number": 10},
-      {"spanish": "veinte", "english": "twenty", "number": 20},
-      {"spanish": "treinta", "english": "thirty", "number": 30},
-      {"spanish": "cuarenta", "english": "forty", "number": 40},
-      {"spanish": "cincuenta", "english": "fifty", "number": 50},
-      {"spanish": "sesenta", "english": "sixty", "number": 60},
-      {"spanish": "setenta", "english": "seventy", "number": 70},
-      {"spanish": "ochenta", "english": "eighty", "number": 80},
-      {"spanish": "noventa", "english": "ninety", "number": 90}
+      {
+        "spanish": "diez",
+        "english": "ten",
+        "number": 10
+      },
+      {
+        "spanish": "veinte",
+        "english": "twenty",
+        "number": 20
+      },
+      {
+        "spanish": "treinta",
+        "english": "thirty",
+        "number": 30
+      },
+      {
+        "spanish": "cuarenta",
+        "english": "forty",
+        "number": 40
+      },
+      {
+        "spanish": "cincuenta",
+        "english": "fifty",
+        "number": 50
+      },
+      {
+        "spanish": "sesenta",
+        "english": "sixty",
+        "number": 60
+      },
+      {
+        "spanish": "setenta",
+        "english": "seventy",
+        "number": 70
+      },
+      {
+        "spanish": "ochenta",
+        "english": "eighty",
+        "number": 80
+      },
+      {
+        "spanish": "noventa",
+        "english": "ninety",
+        "number": 90
+      }
     ],
     "higher": [
-      {"spanish": "cien", "english": "hundred", "number": 100},
-      {"spanish": "mil", "english": "thousand", "number": 1000},
-      {"spanish": "un millón", "english": "one million", "number": 1000000}
+      {
+        "spanish": "cien",
+        "english": "hundred",
+        "number": 100
+      },
+      {
+        "spanish": "mil",
+        "english": "thousand",
+        "number": 1000
+      },
+      {
+        "spanish": "un millón",
+        "english": "one million",
+        "number": 1000000
+      }
     ],
     "ordinals": [
-      {"spanish": "primero", "english": "first"},
-      {"spanish": "segundo", "english": "second"},
-      {"spanish": "tercero", "english": "third"},
-      {"spanish": "cuarto", "english": "fourth"},
-      {"spanish": "quinto", "english": "fifth"},
-      {"spanish": "sexto", "english": "sixth"},
-      {"spanish": "séptimo", "english": "seventh"},
-      {"spanish": "octavo", "english": "eighth"},
-      {"spanish": "noveno", "english": "ninth"},
-      {"spanish": "décimo", "english": "tenth"}
-    ]
+      {
+        "spanish": "primero",
+        "english": "first"
+      },
+      {
+        "spanish": "segundo",
+        "english": "second"
+      },
+      {
+        "spanish": "tercero",
+        "english": "third"
+      },
+      {
+        "spanish": "cuarto",
+        "english": "fourth"
+      },
+      {
+        "spanish": "quinto",
+        "english": "fifth"
+      },
+      {
+        "spanish": "sexto",
+        "english": "sixth"
+      },
+      {
+        "spanish": "séptimo",
+        "english": "seventh"
+      },
+      {
+        "spanish": "octavo",
+        "english": "eighth"
+      },
+      {
+        "spanish": "noveno",
+        "english": "ninth"
+      },
+      {
+        "spanish": "décimo",
+        "english": "tenth"
+      }
+    ],
+    "teens_twenties": [
+      {
+        "number": 11,
+        "spanish": "once",
+        "english": "eleven"
+      },
+      {
+        "number": 12,
+        "spanish": "doce",
+        "english": "twelve"
+      },
+      {
+        "number": 13,
+        "spanish": "trece",
+        "english": "thirteen"
+      },
+      {
+        "number": 14,
+        "spanish": "catorce",
+        "english": "fourteen"
+      },
+      {
+        "number": 15,
+        "spanish": "quince",
+        "english": "fifteen"
+      },
+      {
+        "number": 16,
+        "spanish": "dieciséis",
+        "english": "sixteen"
+      },
+      {
+        "number": 17,
+        "spanish": "diecisiete",
+        "english": "seventeen"
+      },
+      {
+        "number": 18,
+        "spanish": "dieciocho",
+        "english": "eighteen"
+      },
+      {
+        "number": 19,
+        "spanish": "diecinueve",
+        "english": "nineteen"
+      },
+      {
+        "number": 20,
+        "spanish": "veinte",
+        "english": "twenty"
+      },
+      {
+        "number": 21,
+        "spanish": "veintiuno",
+        "english": "twenty-one"
+      },
+      {
+        "number": 22,
+        "spanish": "veintidós",
+        "english": "twenty-two"
+      },
+      {
+        "number": 23,
+        "spanish": "veintitrés",
+        "english": "twenty-three"
+      },
+      {
+        "number": 24,
+        "spanish": "veinticuatro",
+        "english": "twenty-four"
+      },
+      {
+        "number": 25,
+        "spanish": "veinticinco",
+        "english": "twenty-five"
+      },
+      {
+        "number": 26,
+        "spanish": "veintiséis",
+        "english": "twenty-six"
+      },
+      {
+        "number": 27,
+        "spanish": "veintisiete",
+        "english": "twenty-seven"
+      },
+      {
+        "number": 28,
+        "spanish": "veintiocho",
+        "english": "twenty-eight"
+      },
+      {
+        "number": 29,
+        "spanish": "veintinueve",
+        "english": "twenty-nine"
+      }
+    ],
+    "hundreds": [
+      {
+        "number": 100,
+        "spanish": "cien",
+        "english": "one hundred"
+      },
+      {
+        "number": 101,
+        "spanish": "ciento uno",
+        "english": "one hundred one"
+      },
+      {
+        "number": 200,
+        "spanish": "doscientos",
+        "english": "two hundred"
+      },
+      {
+        "number": 300,
+        "spanish": "trescientos",
+        "english": "three hundred"
+      },
+      {
+        "number": 400,
+        "spanish": "cuatrocientos",
+        "english": "four hundred"
+      },
+      {
+        "number": 500,
+        "spanish": "quinientos",
+        "english": "five hundred"
+      },
+      {
+        "number": 600,
+        "spanish": "seiscientos",
+        "english": "six hundred"
+      },
+      {
+        "number": 700,
+        "spanish": "setecientos",
+        "english": "seven hundred"
+      },
+      {
+        "number": 800,
+        "spanish": "ochocientos",
+        "english": "eight hundred"
+      },
+      {
+        "number": 900,
+        "spanish": "novecientos",
+        "english": "nine hundred"
+      }
+    ],
+    "thousands": [
+      {
+        "number": 1000,
+        "spanish": "mil",
+        "english": "one thousand"
+      },
+      {
+        "number": 2000,
+        "spanish": "dos mil",
+        "english": "two thousand"
+      },
+      {
+        "number": 5000,
+        "spanish": "cinco mil",
+        "english": "five thousand"
+      },
+      {
+        "number": 10000,
+        "spanish": "diez mil",
+        "english": "ten thousand"
+      },
+      {
+        "number": 20000,
+        "spanish": "veinte mil",
+        "english": "twenty thousand"
+      },
+      {
+        "number": 50000,
+        "spanish": "cincuenta mil",
+        "english": "fifty thousand"
+      },
+      {
+        "number": 100000,
+        "spanish": "cien mil",
+        "english": "one hundred thousand"
+      },
+      {
+        "number": 500000,
+        "spanish": "quinientos mil",
+        "english": "five hundred thousand"
+      }
+    ],
+    "millions": [
+      {
+        "number": 1000000,
+        "spanish": "un millón",
+        "english": "one million"
+      },
+      {
+        "number": 2000000,
+        "spanish": "dos millones",
+        "english": "two million"
+      },
+      {
+        "number": 10000000,
+        "spanish": "diez millones",
+        "english": "ten million"
+      },
+      {
+        "number": 100000000,
+        "spanish": "cien millones",
+        "english": "one hundred million"
+      },
+      {
+        "number": 1000000000,
+        "spanish": "mil millones",
+        "english": "one billion (US 'billion'; Spanish 'un billón' is 10**12)"
+      }
+    ],
+    "example_numbers": [
+      {
+        "number": 125,
+        "spanish": "ciento veinticinco",
+        "english": "one hundred twenty-five"
+      },
+      {
+        "number": 350,
+        "spanish": "trescientos cincuenta",
+        "english": "three hundred fifty"
+      },
+      {
+        "number": 1250,
+        "spanish": "mil doscientos cincuenta",
+        "english": "one thousand two hundred fifty"
+      },
+      {
+        "number": 2026,
+        "spanish": "dos mil veintiséis",
+        "english": "two thousand twenty-six"
+      },
+      {
+        "number": 15000,
+        "spanish": "quince mil",
+        "english": "fifteen thousand"
+      },
+      {
+        "number": 250000,
+        "spanish": "doscientos cincuenta mil",
+        "english": "two hundred fifty thousand"
+      },
+      {
+        "number": 1500000,
+        "spanish": "un millón quinientos mil",
+        "english": "one million five hundred thousand"
+      }
+    ],
+    "money_examples": [
+      {
+        "price": "$15",
+        "spanish": "quince pesos",
+        "english": "15 pesos"
+      },
+      {
+        "price": "$21",
+        "spanish": "veintiún pesos",
+        "english": "21 pesos"
+      },
+      {
+        "price": "$199",
+        "spanish": "ciento noventa y nueve pesos",
+        "english": "199 pesos"
+      },
+      {
+        "price": "$1,250",
+        "spanish": "mil doscientos cincuenta pesos",
+        "english": "1,250 pesos"
+      },
+      {
+        "price": "$1,250.50",
+        "spanish": "mil doscientos cincuenta pesos con cincuenta centavos",
+        "english": "1,250 pesos and 50 centavos"
+      },
+      {
+        "price": "$15,000",
+        "spanish": "quince mil pesos",
+        "english": "15,000 pesos"
+      },
+      {
+        "price": "$1,000,000",
+        "spanish": "un millón de pesos",
+        "english": "1,000,000 pesos"
+      }
+    ],
+    "rules": [
+      {
+        "title": "100 is 'cien', 101-199 is 'ciento'",
+        "spanish": "cien pesos / ciento cinco pesos",
+        "english": "100 pesos / 105 pesos"
+      },
+      {
+        "title": "'y' only between tens and units",
+        "spanish": "treinta y cinco, pero ciento cinco (no 'ciento y cinco')",
+        "english": "35, but 105"
+      },
+      {
+        "title": "1,000 is just 'mil' (never 'un mil')",
+        "spanish": "mil pesos / dos mil pesos",
+        "english": "1,000 pesos / 2,000 pesos"
+      },
+      {
+        "title": "'millón' is a noun: 'un millón DE' + noun",
+        "spanish": "un millón de pesos, dos millones de personas",
+        "english": "one million pesos, two million people"
+      },
+      {
+        "title": "'un' before a masculine noun, 'una' before a feminine one",
+        "spanish": "veintiún pesos, veintiuna personas",
+        "english": "21 pesos, 21 people"
+      },
+      {
+        "title": "Hundreds agree with the noun",
+        "spanish": "doscientos pesos, doscientas personas",
+        "english": "200 pesos, 200 people"
+      },
+      {
+        "title": "Irregular hundreds",
+        "spanish": "quinientos (500), setecientos (700), novecientos (900)",
+        "english": "not 'cincocientos', 'sietecientos', 'nuevecientos'"
+      },
+      {
+        "title": "'mil millones' is a US billion; 'billón' is a trillion",
+        "spanish": "mil millones = 1,000,000,000 / un billón = 1,000,000,000,000",
+        "english": "a classic trap when reading news and prices"
+      },
+      {
+        "title": "Reading prices and decimals in Mexico",
+        "spanish": "$1,250.50 → mil doscientos cincuenta pesos con cincuenta centavos; 3.5 → tres punto cinco",
+        "english": "Mexico uses a comma for thousands and a period for decimals, like the US. Spain and some Latin American countries use the opposite."
+      }
+    ],
+    "source": "Generated by tested code (spanish_tools.py)"
   },
   "money": {
     "currencies": [
@@ -153,33 +1022,303 @@
       }
     ],
     "payment_methods": [
-      {"spanish": "efectivo", "english": "cash"},
-      {"spanish": "tarjeta de crédito", "english": "credit card"},
-      {"spanish": "tarjeta de débito", "english": "debit card"},
-      {"spanish": "cheque", "english": "check"},
-      {"spanish": "transferencia bancaria", "english": "bank transfer"},
-      {"spanish": "billetera digital", "english": "digital wallet"}
+      {
+        "spanish": "efectivo",
+        "english": "cash"
+      },
+      {
+        "spanish": "tarjeta de crédito",
+        "english": "credit card"
+      },
+      {
+        "spanish": "tarjeta de débito",
+        "english": "debit card"
+      },
+      {
+        "spanish": "cheque",
+        "english": "check"
+      },
+      {
+        "spanish": "transferencia bancaria",
+        "english": "bank transfer"
+      },
+      {
+        "spanish": "billetera digital",
+        "english": "digital wallet"
+      }
     ],
     "banking": [
-      {"spanish": "banco", "english": "bank"},
-      {"spanish": "cajero automático", "english": "ATM"},
-      {"spanish": "depósito", "english": "deposit"},
-      {"spanish": "retiro", "english": "withdrawal"},
-      {"spanish": "cuenta corriente", "english": "checking account"},
-      {"spanish": "cuenta de ahorros", "english": "savings account"},
-      {"spanish": "préstamo", "english": "loan"},
-      {"spanish": "interés", "english": "interest"},
-      {"spanish": "comisión", "english": "fee"}
+      {
+        "spanish": "banco",
+        "english": "bank"
+      },
+      {
+        "spanish": "cajero automático",
+        "english": "ATM"
+      },
+      {
+        "spanish": "depósito",
+        "english": "deposit"
+      },
+      {
+        "spanish": "retiro",
+        "english": "withdrawal"
+      },
+      {
+        "spanish": "cuenta corriente",
+        "english": "checking account"
+      },
+      {
+        "spanish": "cuenta de ahorros",
+        "english": "savings account"
+      },
+      {
+        "spanish": "préstamo",
+        "english": "loan"
+      },
+      {
+        "spanish": "interés",
+        "english": "interest"
+      },
+      {
+        "spanish": "comisión",
+        "english": "fee"
+      }
     ],
     "shopping": [
-      {"spanish": "precio", "english": "price"},
-      {"spanish": "descuento", "english": "discount"},
-      {"spanish": "oferta", "english": "special offer"},
-      {"spanish": "rebaja", "english": "sale"},
-      {"spanish": "propina", "english": "tip"},
-      {"spanish": "impuesto", "english": "tax"},
-      {"spanish": "total", "english": "total"},
-      {"spanish": "cambio", "english": "change"}
+      {
+        "spanish": "precio",
+        "english": "price"
+      },
+      {
+        "spanish": "descuento",
+        "english": "discount"
+      },
+      {
+        "spanish": "oferta",
+        "english": "special offer"
+      },
+      {
+        "spanish": "rebaja",
+        "english": "sale"
+      },
+      {
+        "spanish": "propina",
+        "english": "tip"
+      },
+      {
+        "spanish": "impuesto",
+        "english": "tax"
+      },
+      {
+        "spanish": "total",
+        "english": "total"
+      },
+      {
+        "spanish": "cambio",
+        "english": "change"
+      }
     ]
+  },
+  "math": {
+    "operations": [
+      {
+        "symbol": "+",
+        "spanish": "más",
+        "also": "y (dos y dos son cuatro)",
+        "verb": "sumar",
+        "noun": "la suma",
+        "english": "plus / add"
+      },
+      {
+        "symbol": "−",
+        "spanish": "menos",
+        "also": "",
+        "verb": "restar",
+        "noun": "la resta",
+        "english": "minus / subtract"
+      },
+      {
+        "symbol": "×",
+        "spanish": "por",
+        "also": "multiplicado por",
+        "verb": "multiplicar",
+        "noun": "la multiplicación",
+        "english": "times / multiply"
+      },
+      {
+        "symbol": "÷",
+        "spanish": "entre",
+        "also": "dividido entre / dividido por",
+        "verb": "dividir",
+        "noun": "la división",
+        "english": "divided by / divide"
+      },
+      {
+        "symbol": "=",
+        "spanish": "son / es / igual a",
+        "also": "da / resulta",
+        "verb": "",
+        "noun": "el resultado",
+        "english": "equals / the result"
+      }
+    ],
+    "comparisons": [
+      {
+        "symbol": ">",
+        "spanish": "mayor que",
+        "example": "Diez es mayor que cinco.",
+        "english": "10 is greater than 5"
+      },
+      {
+        "symbol": "<",
+        "spanish": "menor que",
+        "example": "Cinco es menor que diez.",
+        "english": "5 is less than 10"
+      },
+      {
+        "symbol": "=",
+        "spanish": "igual a",
+        "example": "Dos más dos es igual a cuatro.",
+        "english": "2 + 2 equals 4"
+      },
+      {
+        "symbol": "≠",
+        "spanish": "diferente de / distinto de",
+        "example": "Tres es diferente de cuatro.",
+        "english": "3 is not equal to 4"
+      },
+      {
+        "symbol": "≥",
+        "spanish": "mayor o igual que",
+        "example": "Cinco es mayor o igual que cinco.",
+        "english": "5 is greater than or equal to 5"
+      },
+      {
+        "symbol": "≤",
+        "spanish": "menor o igual que",
+        "example": "Tres es menor o igual que cuatro.",
+        "english": "3 is less than or equal to 4"
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Cuánto es dos más dos?",
+        "english": "How much is 2 + 2?"
+      },
+      {
+        "spanish": "¿Cuánto es en total?",
+        "english": "How much is it in total?"
+      },
+      {
+        "spanish": "¿Me puede sumar esto, por favor?",
+        "english": "Can you add this up for me, please?"
+      },
+      {
+        "spanish": "¿Cuánto me da de cambio?",
+        "english": "How much change do I get?"
+      },
+      {
+        "spanish": "¿Puede dividir la cuenta entre cuatro?",
+        "english": "Can you split the bill four ways?"
+      },
+      {
+        "spanish": "¿Me hace un descuento?",
+        "english": "Can you give me a discount?"
+      }
+    ],
+    "fractions_percent": [
+      {
+        "spanish": "la mitad",
+        "english": "half"
+      },
+      {
+        "spanish": "un tercio",
+        "english": "a third"
+      },
+      {
+        "spanish": "un cuarto",
+        "english": "a quarter"
+      },
+      {
+        "spanish": "tres cuartos",
+        "english": "three quarters"
+      },
+      {
+        "spanish": "veinte por ciento",
+        "english": "twenty percent (20%)"
+      },
+      {
+        "spanish": "diez por ciento de descuento",
+        "english": "10% off"
+      }
+    ],
+    "examples": [
+      {
+        "expression": "2 + 2 = 4",
+        "spanish": "Dos más dos son cuatro"
+      },
+      {
+        "expression": "9 − 4 = 5",
+        "spanish": "Nueve menos cuatro son cinco"
+      },
+      {
+        "expression": "6 × 7 = 42",
+        "spanish": "Seis por siete son cuarenta y dos"
+      },
+      {
+        "expression": "20 ÷ 5 = 4",
+        "spanish": "Veinte entre cinco son cuatro"
+      },
+      {
+        "expression": "15 + 27 = 42",
+        "spanish": "Quince más veintisiete son cuarenta y dos"
+      },
+      {
+        "expression": "100 − 35 = 65",
+        "spanish": "Cien menos treinta y cinco son sesenta y cinco"
+      },
+      {
+        "expression": "12 × 12 = 144",
+        "spanish": "Doce por doce son ciento cuarenta y cuatro"
+      },
+      {
+        "expression": "1,000 ÷ 4 = 250",
+        "spanish": "Mil entre cuatro son doscientos cincuenta"
+      },
+      {
+        "expression": "250 + 750 = 1,000",
+        "spanish": "Doscientos cincuenta más setecientos cincuenta son mil"
+      },
+      {
+        "expression": "1 + 2 × 6 − 5 = 8",
+        "spanish": "Uno más dos por seis menos cinco son ocho",
+        "note": "Multiplication comes first: 2 × 6 = 12, then 1 + 12 − 5 = 8. In Spanish you say 'menos' for subtraction ('menor que' means 'less than')."
+      },
+      {
+        "expression": "(3 + 4) × 2 = 14",
+        "spanish": "Abre paréntesis, tres más cuatro, cierra paréntesis, por dos, son catorce",
+        "note": "Brackets change the order: add first, then multiply."
+      }
+    ],
+    "shopping_examples": [
+      {
+        "spanish": "Tres tacos a quince pesos son cuarenta y cinco pesos",
+        "math": "3 × 15 = 45"
+      },
+      {
+        "spanish": "Si pago con quinientos y cuesta trescientos cincuenta, me dan ciento cincuenta de cambio",
+        "math": "500 − 350 = 150"
+      },
+      {
+        "spanish": "La cuenta es de mil doscientos pesos; entre cuatro, son trescientos cada uno",
+        "math": "1,200 ÷ 4 = 300"
+      },
+      {
+        "spanish": "El veinte por ciento de quinientos son cien",
+        "math": "20% of 500 = 100"
+      }
+    ],
+    "source": "Generated by tested code (spanish_tools.py); sentences in 'shopping_examples' and 'questions' need native-speaker review"
   }
 }
