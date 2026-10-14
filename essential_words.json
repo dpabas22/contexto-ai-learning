@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "description": "Hand-picked starter words shown at the top of each vocabulary tab. Each word must match the 'spanish' field in its vocab file exactly.",
+    "selection": "Chosen for how often a newcomer needs them (shopping verbs, prices, core items), not by frequency data.",
+    "review": "needs-review"
+  },
+  "market": [
+    "comprar",
+    "costar",
+    "caro",
+    "barato",
+    "descuento",
+    "kilo",
+    "fresco",
+    "mercado",
+    "vendedor",
+    "querer"
+  ],
+  "papeleria": [
+    "cuaderno",
+    "pluma",
+    "lápiz",
+    "papel",
+    "imprimir",
+    "copiar",
+    "tijeras",
+    "pegamento",
+    "blanco y negro",
+    "en color"
+  ],
+  "hospital": [
+    "fiebre",
+    "tos",
+    "dolor de cabeza",
+    "alergia",
+    "emergencia",
+    "cita",
+    "receta",
+    "pastilla",
+    "doctor general",
+    "seguro de salud"
+  ],
+  "school": [
+    "uniforme",
+    "horario",
+    "maestro",
+    "alumno",
+    "director",
+    "pago",
+    "mensualidad",
+    "asistencia",
+    "comida",
+    "autobús escolar"
+  ]
+}
