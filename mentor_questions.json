@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "scenario": "market",
+    "register": "usted with vendors",
+    "version": "0.1",
+    "review": "needs-review",
+    "note": "AI-drafted. A native speaker must check every Spanish line, tag and explanation before this is marked verified. Prices in exercises are illustrative, not real market prices."
+  },
+  "concepts": {
+    "mkt.request": "Ask for items politely with amounts",
+    "mkt.register": "Use usted with vendors",
+    "mkt.ask_have": "Ask whether they have something",
+    "mkt.ask_price": "Ask the price per kilo",
+    "mkt.quantity": "Say amounts such as medio kilo",
+    "mkt.hear_price": "Understand spoken prices",
+    "mkt.pay_change": "Work out the change"
+  },
+  "questions": [
+    {
+      "id": "mkt-q1",
+      "format": "best_reply",
+      "concepts": [
+        "mkt.request",
+        "mkt.register"
+      ],
+      "scene": "At a fruit stall.",
+      "vendor_line": "Buenas tardes. ¿Qué va a llevar?",
+      "prompt": "Choose the best reply.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Necesito comprar mercancía alimenticia de inmediato.",
+          "tag": "too_formal_vague",
+          "why_not": "Grammatically fine, but it sounds stiff and never says which items or amounts you want."
+        },
+        {
+          "id": "B",
+          "text": "Buenas tardes. Me da medio kilo de papaya y un kilo de plátanos, por favor."
+        },
+        {
+          "id": "C",
+          "text": "¡Dame papaya y plátanos ya!",
+          "tag": "too_blunt",
+          "why_not": "«Dame» is a casual command with no «por favor», which sounds blunt to a vendor you address as usted."
+        }
+      ],
+      "correct": "B",
+      "hints": [
+        "Which reply tells the vendor exactly what you want?",
+        "With a vendor you address as usted, a polite request names the items and amounts and ends with the right courtesy word. Avoid casual commands."
+      ],
+      "explanation": "B names the items and amounts and makes a polite request with «Me da…» and «por favor». A is correct Spanish but stiff and vague. C uses the casual command «Dame» with no «por favor», which sounds rude to a vendor you address as usted.",
+      "related": [
+        "phrase:p001",
+        "verb:dar",
+        "vocab:market:querer"
+      ],
+      "review": "needs-review"
+    },
+    {
+      "id": "mkt-q2",
+      "format": "best_reply",
+      "concepts": [
+        "mkt.ask_price"
+      ],
+      "scene": "You see apples and want the price per kilo.",
+      "vendor_line": null,
+      "prompt": "Choose the best question.",
+      "options": [
+        {
+          "id": "A",
+          "text": "¿Tiene manzanas?",
+          "tag": "asks_availability_not_price",
+          "why_not": "A fair question, but it asks whether they have apples, not what they cost."
+        },
+        {
+          "id": "B",
+          "text": "¿A cuánto es el kilo de manzanas?"
+        },
+        {
+          "id": "C",
+          "text": "¿Cuánto cuestan kilo manzanas?",
+          "tag": "missing_words",
+          "why_not": "The right words are there, but small words are missing, so the sentence falls apart."
+        }
+      ],
+      "correct": "B",
+      "hints": [
+        "Do you want to know whether they have apples, or how much they cost?",
+        "Look for the complete question about the price per kilo. Small connecting words matter."
+      ],
+      "explanation": "B asks the price per kilo in a natural, complete way. A asks about availability. C leaves out the small words «el» and «de», so it is not a sentence a vendor expects.",
+      "related": [
+        "phrase:p048",
+        "vocab:market:costar",
+        "vocab:market:kilo"
+      ],
+      "review": "needs-review"
+    },
+    {
+      "id": "mkt-q3",
+      "format": "fill_blank",
+      "concepts": [
+        "mkt.ask_have",
+        "mkt.register"
+      ],
+      "scene": "You are speaking politely (usted) to the vendor.",
+      "vendor_line": null,
+      "prompt": "¿______ aguacates maduros?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tiene"
+        },
+        {
+          "id": "B",
+          "text": "Tienes",
+          "tag": "tu_instead_of_usted",
+          "why_not": "«Tienes» goes with tú. The scene says you are speaking politely, with usted."
+        },
+        {
+          "id": "C",
+          "text": "Tengo",
+          "tag": "wrong_person",
+          "why_not": "«Tengo» means I have, but you are asking the vendor, not talking about yourself."
+        }
+      ],
+      "correct": "A",
+      "hints": [
+        "Who has the avocados: you or the vendor?",
+        "When you address someone as usted, the verb takes the same form as for él or ella. Check the present tense of Tener."
+      ],
+      "explanation": "Usted takes the third-person form, so «¿Tiene…?» is the polite question. «Tienes» is for someone you call tú, and «Tengo» is what the vendor would say about themselves.",
+      "related": [
+        "verb:tener",
+        "phrase:p012"
+      ],
+      "review": "needs-review"
+    },
+    {
+      "id": "mkt-q4",
+      "format": "fill_blank",
+      "concepts": [
+        "mkt.quantity"
+      ],
+      "scene": "You want half a kilo of apples.",
+      "vendor_line": null,
+      "prompt": "Me da ______ kilo de manzanas, por favor.",
+      "options": [
+        {
+          "id": "A",
+          "text": "medio"
+        },
+        {
+          "id": "B",
+          "text": "media",
+          "tag": "gender_agreement",
+          "why_not": "«Media» is feminine, but «kilo» is a masculine word."
+        },
+        {
+          "id": "C",
+          "text": "mitad",
+          "tag": "noun_not_adjective",
+          "why_not": "«Mitad» is a noun (la mitad de…), so it cannot sit in front of «kilo» the way an adjective does."
+        }
+      ],
+      "correct": "A",
+      "hints": [
+        "Is kilo a masculine or a feminine word?",
+        "The missing word describes kilo, so it must agree with it in gender. One option is a noun, not a describing word."
+      ],
+      "explanation": "«Medio» describes «kilo», so it takes the masculine form: medio kilo. «Mitad» is a noun, as in «la mitad de un kilo».",
+      "related": [
+        "vocab:market:kilo",
+        "measurements:fractions",
+        "math:fractions_percent"
+      ],
+      "review": "needs-review"
+    },
+    {
+      "id": "mkt-q5",
+      "format": "hear_and_pay",
+      "concepts": [
+        "mkt.hear_price"
+      ],
+      "scene": "The vendor tells you the price of avocados.",
+      "audio_template": "Son {price_es} pesos el kilo.",
+      "prompt": "Type the price per kilo.",
+      "task": "price",
+      "generator": {
+        "prices": [
+          120,
+          150,
+          230,
+          340,
+          450
+        ]
+      },
+      "wrong_answer_tags": {
+        "missed_hundreds": "answer equals the price modulo 100",
+        "missed_tens": "answer equals the hundreds part only",
+        "ciento_vs_mil": "answer is the price with an extra zero, such as 1,020 or 1,200"
+      },
+      "hints": [
+        "Split the number into a hundreds part and a tens part.",
+        "Say the hundreds word first, then add the value of the tens word."
+      ],
+      "explanation": "Hundreds come first, then tens: ciento veinte is 100 + 20 = 120. «Ciento» is 100; «mil» would be 1,000.",
+      "related": [
+        "numbers:hundreds",
+        "numbers:say_any_number"
+      ],
+      "review": "needs-review"
+    },
+    {
+      "id": "mkt-q6",
+      "format": "hear_and_pay",
+      "concepts": [
+        "mkt.hear_price",
+        "mkt.pay_change"
+      ],
+      "scene": "You pay with a 500-peso note.",
+      "audio_template": "Son {price_es} pesos.",
+      "prompt": "How much change do you get?",
+      "task": "change",
+      "generator": {
+        "prices": [
+          350,
+          280,
+          420,
+          175,
+          330
+        ],
+        "paid": 500
+      },
+      "wrong_answer_tags": {
+        "added_instead_of_subtracted": "answer equals paid plus price",
+        "repeated_price": "answer equals the price"
+      },
+      "hints": [
+        "First write down the price you heard.",
+        "Change is what you give minus what it costs."
+      ],
+      "explanation": "Change = what you pay minus the price. For example, 500 − 350 = 150: «me dan ciento cincuenta de cambio».",
+      "related": [
+        "math:shopping_examples",
+        "numbers:money_examples"
+      ],
+      "review": "needs-review"
+    }
+  ]
+}
