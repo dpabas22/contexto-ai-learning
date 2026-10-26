@@ -118,7 +118,7 @@ def _build_question(index, mode, word, all_words, rng):
         candidates.append("Piensa en cómo suena la palabra.")
         hint1 = next(c for c in candidates if not _has_word(c, correct_text))
     else:
-        prompt = "Escucha y elige la palabra."
+        prompt = "🎧 Escucha y elige la palabra."
         instruction = "Pulsa el altavoz. ¡Puedes oírla con voz de ardilla o de gigante!"
         hint1 = "Escucha otra vez. ¡Prueba la voz de gigante! 🐘"
     hint2 = f"Empieza con la letra «{_hint_letter(correct_text)}»."

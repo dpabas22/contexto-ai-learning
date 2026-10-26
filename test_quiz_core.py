@@ -191,7 +191,7 @@ def test_audio_player_has_three_voices_and_pitch_control():
 
 
 # ------------------------------------------------------------ the real page, played like a child
-def make_app(monkeypatch):
+def make_app(monkeypatch, pick="pipo"):
     import gtts
     from streamlit.testing.v1 import AppTest
 
@@ -206,7 +206,10 @@ def make_app(monkeypatch):
     sys.path.insert(0, str(ROOT))
     import streamlit as st
     st.cache_data.clear()
-    return AppTest.from_file(str(ROOT / "pages" / "1_Juego.py"), default_timeout=60).run()
+    app = AppTest.from_file(str(ROOT / "pages" / "1_Juego.py"), default_timeout=60).run()
+    if pick:
+        next(b for b in app.button if b.key == f"pick_{pick}").click().run()
+    return app
 
 
 def option_buttons(app):
@@ -286,6 +289,111 @@ def test_page_still_works_when_the_voice_service_is_down(monkeypatch):
     import streamlit as st
     st.cache_data.clear()
     app = AppTest.from_file(str(ROOT / "pages" / "1_Juego.py"), default_timeout=60).run()
+    next(b for b in app.button if b.key == "pick_misi").click().run()
     assert not app.exception
     assert any("Sin audio por ahora" in c.value for c in app.caption)
     assert len(option_buttons(app)) == 4                      # the game is still playable
+
+
+# ------------------------------------------------------------ characters, jingles and the break reminder
+@pytest.fixture
+def sound_labels(monkeypatch):
+    """Record which tap-to-play sound buttons the page shows."""
+    import sounds
+    labels = []
+    original = sounds.sound_button_html
+
+    def recording(label, *args, **kwargs):
+        labels.append(label)
+        return original(label, *args, **kwargs)
+
+    monkeypatch.setattr(sounds, "sound_button_html", recording)
+    return labels
+
+
+def finish_question_perfectly(app):
+    rnd = app.session_state["juego_round"]
+    click_option(app, rnd.current["correct"])
+    next(b for b in app.button if b.key == f"next_{rnd.index}").click().run()
+
+
+def finish_question_with_reveal(app):
+    rnd = app.session_state["juego_round"]
+    index = rnd.index
+    for option_id in [o["id"] for o in rnd.current["options"] if o["id"] != rnd.current["correct"]]:
+        click_option(app, option_id)
+    next(b for b in app.button if b.key == f"next_{index}").click().run()
+
+
+def play_round(app, how):
+    for _ in range(qc.ROUND_SIZE):
+        how(app)
+
+
+def test_picker_comes_first(monkeypatch):
+    app = make_app(monkeypatch, pick=None)
+    assert not app.exception
+    assert {b.key for b in app.button if b.key.startswith("pick_")} == {"pick_pipo", "pick_misi", "pick_lorito"}
+    assert option_buttons(app) == []                         # the game starts after a friend is chosen
+
+
+def test_choosing_a_friend_starts_the_game(monkeypatch):
+    app = make_app(monkeypatch, pick="misi")
+    assert not app.exception and len(option_buttons(app)) == 4
+    assert any("Misi" in m.value for m in app.markdown)      # the character greets the child
+
+
+def test_encouragement_button_appears_after_a_reveal(monkeypatch, sound_labels):
+    app = make_app(monkeypatch)
+    rnd = app.session_state["juego_round"]
+    for option_id in [o["id"] for o in rnd.current["options"] if o["id"] != rnd.current["correct"]]:
+        click_option(app, option_id)
+    assert "💪 ¡Tú puedes!" in sound_labels
+    assert not app.exception
+
+
+def test_no_encouragement_button_after_a_correct_answer(monkeypatch, sound_labels):
+    app = make_app(monkeypatch)
+    click_option(app, app.session_state["juego_round"].current["correct"])
+    assert "💪 ¡Tú puedes!" not in sound_labels
+
+
+def test_celebration_button_after_a_great_round(monkeypatch, sound_labels):
+    app = make_app(monkeypatch)
+    play_round(app, finish_question_perfectly)
+    assert "🎉 ¡Felicidades!" in sound_labels
+    assert not app.exception
+
+
+def test_no_celebration_after_a_weak_round(monkeypatch, sound_labels):
+    app = make_app(monkeypatch)
+    play_round(app, finish_question_with_reveal)
+    assert app.header[0].value == "¡Ronda terminada! 🎉"
+    assert "🎉 ¡Felicidades!" not in sound_labels
+    assert any("0 de 15" in s.value for s in app.subheader)
+
+
+def test_break_suggestion_after_three_rounds(monkeypatch):
+    app = make_app(monkeypatch)
+    for round_number in range(3):
+        play_round(app, finish_question_perfectly)
+        text = " ".join(m.value for m in app.markdown)
+        if round_number < 2:
+            assert "Descansa" not in text
+            next(b for b in app.button if b.label == "Jugar otra vez 🔄").click().run()
+        else:
+            assert "Descansa un poco" in text
+
+
+def test_the_child_can_change_friend(monkeypatch):
+    app = make_app(monkeypatch)
+    next(b for b in app.button if b.label == "Cambiar de amigo").click().run()
+    assert any(b.key == "pick_lorito" for b in app.button)
+    assert option_buttons(app) == []
+
+
+def test_listening_questions_are_clearly_labelled():
+    questions = qc.make_round(qc.load_words("market"), rng=random.Random(2))
+    for question in questions:
+        if question["mode"] == "listen":
+            assert question["prompt"].startswith("🎧")
