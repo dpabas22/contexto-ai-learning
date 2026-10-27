@@ -58,3 +58,12 @@ def test_all_speech_is_supportive_and_complete():
     for lines in avatars.SPEECH.values():
         assert not any(word in line.lower() for line in lines for word in banned)
     assert any("Tú puedes" in line for line in avatars.SPEECH["retry"])
+
+
+def test_reduce_motion_rule_can_be_left_out_by_a_parent():
+    with_rule = avatars.avatar_svg("pipo")
+    without_rule = avatars.avatar_svg("pipo", respect_reduced_motion=False)
+    assert "prefers-reduced-motion" in with_rule
+    assert "prefers-reduced-motion" not in without_rule
+    ET.fromstring(without_rule)                       # still valid SVG
+    assert "@keyframes bob" in without_rule           # the motion itself is still there

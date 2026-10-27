@@ -92,7 +92,7 @@ def sound_button_html(label, jingle_wav, speech_mp3=None, color="#27ae60"):
 <script>
   const musica = document.getElementById('musica');
   const habla = document.getElementById('habla');
-  musica.volume = 0.6;
+  musica.volume = 0.8;
   if (habla) habla.volume = 0.9;
   function go() {{
     if (habla) {{ habla.pause(); habla.currentTime = 0; }}

@@ -348,14 +348,40 @@ def test_encouragement_button_appears_after_a_reveal(monkeypatch, sound_labels):
     rnd = app.session_state["juego_round"]
     for option_id in [o["id"] for o in rnd.current["options"] if o["id"] != rnd.current["correct"]]:
         click_option(app, option_id)
-    assert "💪 ¡Tú puedes!" in sound_labels
+    assert "🔊 ¡Tú puedes!" in sound_labels
     assert not app.exception
+
+
+def test_encouragement_button_appears_after_every_mistake(monkeypatch, sound_labels):
+    app = make_app(monkeypatch)
+    rnd = app.session_state["juego_round"]
+    wrong = [o["id"] for o in rnd.current["options"] if o["id"] != rnd.current["correct"]][0]
+    click_option(app, wrong)
+    assert "🔊 ¡Tú puedes!" in sound_labels
 
 
 def test_no_encouragement_button_after_a_correct_answer(monkeypatch, sound_labels):
     app = make_app(monkeypatch)
     click_option(app, app.session_state["juego_round"].current["correct"])
-    assert "💪 ¡Tú puedes!" not in sound_labels
+    assert "🔊 ¡Tú puedes!" not in sound_labels
+
+
+def test_parent_can_override_the_reduce_motion_setting(monkeypatch):
+    import avatars
+    calls = []
+    original = avatars.avatar_svg
+
+    def recording(key, mood="idle", size=140, respect_reduced_motion=True):
+        calls.append(respect_reduced_motion)
+        return original(key, mood, size, respect_reduced_motion)
+
+    monkeypatch.setattr(avatars, "avatar_svg", recording)
+    app = make_app(monkeypatch)
+    assert calls and all(calls)                       # default: follow the device setting
+    calls.clear()
+    app.checkbox(key="juego_force_motion").check().run()
+    assert not app.exception
+    assert calls and not any(calls)                   # parent chose to always animate
 
 
 def test_celebration_button_after_a_great_round(monkeypatch, sound_labels):

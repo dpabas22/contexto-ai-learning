@@ -179,8 +179,16 @@ def _lorito(mood):
 _DRAW = {"pipo": _pipo, "misi": _misi, "lorito": _lorito}
 
 
-def avatar_svg(key, mood="idle", size=140):
-    """The drawing of one character in one mood, as an SVG string."""
+_REDUCE_RULE = "@media (prefers-reduced-motion: reduce){*{animation:none !important}}"
+
+
+def avatar_svg(key, mood="idle", size=140, respect_reduced_motion=True):
+    """The drawing of one character in one mood, as an SVG string.
+
+    By default the motion switches off when the device asks for reduced motion.
+    A parent can turn that off (respect_reduced_motion=False) if the device is set
+    that way by accident, for example by a battery-saver mode.
+    """
     if key not in _DRAW:
         raise ValueError(f"Unknown character: {key}")
     if mood not in MOODS:
@@ -190,5 +198,6 @@ def avatar_svg(key, mood="idle", size=140):
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="{size}" '
         f'height="{size}" role="img" aria-label="{label}"><title>{label}</title>'
-        f"{_STYLE}{_DRAW[key](mood)}</svg>"
+        f"{_STYLE if respect_reduced_motion else _STYLE.replace(_REDUCE_RULE, '')}"
+        f"{_DRAW[key](mood)}</svg>"
     )
