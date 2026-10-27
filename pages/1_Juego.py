@@ -125,12 +125,18 @@ def on_next():
 
 
 # ---------------------------------------------------------------- screens
+def draw(key, mood, size):
+    """One character, honouring the parent's motion choice."""
+    follow_device = not st.session_state.get("juego_force_motion", False)
+    return avatars.avatar_svg(key, mood, size=size, respect_reduced_motion=follow_device)
+
+
 def show_picker():
     st.subheader("Elige a tu amigo")
     columns = st.columns(len(avatars.AVATARS))
     for column, (key, info) in zip(columns, avatars.AVATARS.items()):
         with column:
-            st.image(avatars.avatar_svg(key, "idle", size=150), width=150)
+            st.image(draw(key, "idle", 150), width=150)
             st.caption(f"{info['name']}, {info['desc']}")
             st.button(f"Elegir a {info['name']}", key=f"pick_{key}",
                       on_click=choose_avatar, args=(key,), use_container_width=True)
@@ -143,10 +149,12 @@ def show_avatar_row():
     mood = avatars.MOOD_FOR[bubble["kind"]] if bubble else "idle"
     picture, words = st.columns([1, 3])
     with picture:
-        st.image(avatars.avatar_svg(key, mood, size=120), width=120)
+        st.image(draw(key, mood, 120), width=120)
     with words:
         if bubble:
             st.markdown(f"> **{info['name']}:** {bubble['text']}")
+            if bubble["kind"] in ("retry", "reveal"):
+                show_sound_button("🔊 ¡Tú puedes!", "encourage", "¡Tú puedes!", "#2e86de")
 
 
 def show_card(card):
@@ -193,8 +201,6 @@ def show_question(rnd):
     else:
         correct_text = next(o["text"] for o in question["options"] if o["id"] == question["correct"])
         st.info((message["text"] if message else "No pasa nada.") + f"  La respuesta es «{correct_text}».")
-        st.caption("Pulsa para escuchar 🎵")
-        show_sound_button("💪 ¡Tú puedes!", "encourage", "¡Tú puedes!", "#2e86de")
     show_card(question["card"])
     last = rnd.index == len(rnd.questions) - 1
     st.button("Ver mi resultado 🏁" if last else "Siguiente ➡️",
@@ -242,6 +248,12 @@ with st.expander("👨‍👩‍👦 Para papá y mamá (English)"):
         "Sounds play only when tapped, at a moderate volume. Motion is gentle and switches off "
         "if the device is set to reduce motion. After every third round the character suggests a "
         "short break. The Spanish lines and the word list should be checked by a native speaker."
+    )
+    st.checkbox("Always animate the characters (ignore this device's \"reduce motion\" setting)",
+                key="juego_force_motion")
+    st.write(
+        "Sounds only play when tapped, because browsers block sound that starts by itself. "
+        "If a button makes no sound, check the device volume and that the tab is not muted."
     )
     st.selectbox("Words from", list(SCENARIO_NAMES), format_func=SCENARIO_NAMES.get,
                  key="juego_scenario", on_change=start_round)
