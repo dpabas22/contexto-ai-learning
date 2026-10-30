@@ -111,6 +111,20 @@ def build_registry(base=BASE):
         _add(registry, f"measurements:{key}", f"Measurements: {key}",
              "measurements", key, key)
 
+    # Money tab: the app shows currencies and payment methods
+    for key in ("currencies", "payment_methods"):
+        if key in refs["money"]:
+            _add(registry, f"money:{key}", f"Money: {key.replace('_', ' ')}",
+                 "money", key, key)
+
+    # Transportation tab: the app shows Querétaro areas and transportation options
+    expanded = _load("expanded_vocab.json", base)["neighborhoods"]
+    for target, source, label in (("areas", "querétaro_areas", "Querétaro areas"),
+                                  ("options", "transportation", "Transportation options")):
+        if source in expanded:
+            _add(registry, f"transport:{target}", f"Transportation: {label}",
+                 "transportation", target, None)
+
     return registry
 
 

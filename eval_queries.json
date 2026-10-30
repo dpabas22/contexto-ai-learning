@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "note": "AI-drafted. The same author wrote these queries and the index hints, so results are optimistic. Replace or add queries written by real learners before trusting the numbers.",
+    "types": "explicit 10, descriptive 15, confusion 10, uncovered 5",
+    "split": "dev is used to choose the confidence threshold, test is used to report results",
+    "review": "needs-review"
+  },
+  "queries": [
+    {
+      "id": "e01",
+      "type": "explicit",
+      "split": "dev",
+      "query": "Show me the verb ser",
+      "expected": [
+        "verb:ser"
+      ]
+    },
+    {
+      "id": "e02",
+      "type": "explicit",
+      "split": "test",
+      "query": "open the market conversation",
+      "expected": [
+        "conv:conv001"
+      ]
+    },
+    {
+      "id": "e03",
+      "type": "explicit",
+      "split": "dev",
+      "query": "what does kilo mean",
+      "expected": [
+        "vocab:market:kilo"
+      ]
+    },
+    {
+      "id": "e04",
+      "type": "explicit",
+      "split": "test",
+      "query": "where can I find the hundreds numbers",
+      "expected": [
+        "numbers:hundreds"
+      ]
+    },
+    {
+      "id": "e05",
+      "type": "explicit",
+      "split": "dev",
+      "query": "conjugation of querer",
+      "expected": [
+        "verb:querer"
+      ]
+    },
+    {
+      "id": "e06",
+      "type": "explicit",
+      "split": "test",
+      "query": "what does fiebre mean",
+      "expected": [
+        "vocab:hospital:fiebre"
+      ]
+    },
+    {
+      "id": "e07",
+      "type": "explicit",
+      "split": "dev",
+      "query": "show me the paper store conversation",
+      "expected": [
+        "conv:conv003"
+      ]
+    },
+    {
+      "id": "e08",
+      "type": "explicit",
+      "split": "test",
+      "query": "days of the week",
+      "expected": [
+        "time:days"
+      ]
+    },
+    {
+      "id": "e09",
+      "type": "explicit",
+      "split": "dev",
+      "query": "the phrase ¿Cuánto cuesta?",
+      "expected": [
+        "phrase:p048"
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "explicit",
+      "split": "test",
+      "query": "what is a pluma",
+      "expected": [
+        "vocab:papeleria:pluma"
+      ]
+    },
+    {
+      "id": "d01",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how do I ask how much something costs",
+      "expected": [
+        "phrase:p048",
+        "vocab:market:costar"
+      ]
+    },
+    {
+      "id": "d02",
+      "type": "descriptive",
+      "split": "test",
+      "query": "I want to say that something is too expensive",
+      "expected": [
+        "phrase:p049",
+        "vocab:market:caro"
+      ]
+    },
+    {
+      "id": "d03",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how do I ask for a discount",
+      "expected": [
+        "phrase:p050",
+        "vocab:market:descuento"
+      ]
+    },
+    {
+      "id": "d04",
+      "type": "descriptive",
+      "split": "test",
+      "query": "how do I pay with a card",
+      "expected": [
+        "phrase:p008",
+        "money:payment_methods"
+      ]
+    },
+    {
+      "id": "d05",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how to say what time it is",
+      "expected": [
+        "time:ask_and_answer",
+        "time:clock_examples"
+      ]
+    },
+    {
+      "id": "d06",
+      "type": "descriptive",
+      "split": "test",
+      "query": "I need to count money in pesos",
+      "expected": [
+        "numbers:money_examples",
+        "money:currencies",
+        "numbers:hundreds"
+      ]
+    },
+    {
+      "id": "d07",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how do I tell the doctor my head hurts",
+      "expected": [
+        "vocab:hospital:dolor de cabeza",
+        "phrase:p030"
+      ]
+    },
+    {
+      "id": "d08",
+      "type": "descriptive",
+      "split": "test",
+      "query": "I want to book a medical appointment",
+      "expected": [
+        "vocab:hospital:cita",
+        "conv:conv002"
+      ]
+    },
+    {
+      "id": "d09",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how do I ask for half a kilo",
+      "expected": [
+        "measurements:fractions",
+        "math:fractions_percent",
+        "vocab:market:kilo"
+      ]
+    },
+    {
+      "id": "d10",
+      "type": "descriptive",
+      "split": "test",
+      "query": "what can I say when I am lost",
+      "expected": [
+        "phrase:p031",
+        "phrase:p032"
+      ]
+    },
+    {
+      "id": "d11",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how do I say I need to print and bind documents",
+      "expected": [
+        "vocab:papeleria:imprimir",
+        "vocab:papeleria:encuadernación",
+        "conv:conv003"
+      ]
+    },
+    {
+      "id": "d12",
+      "type": "descriptive",
+      "split": "test",
+      "query": "words for my child's school uniform",
+      "expected": [
+        "vocab:school:uniforme"
+      ]
+    },
+    {
+      "id": "d13",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how do I ask for the bill at a restaurant",
+      "expected": [
+        "phrase:p005",
+        "phrase:p010"
+      ]
+    },
+    {
+      "id": "d14",
+      "type": "descriptive",
+      "split": "test",
+      "query": "how do I order a coffee politely",
+      "expected": [
+        "phrase:p001"
+      ]
+    },
+    {
+      "id": "d15",
+      "type": "descriptive",
+      "split": "dev",
+      "query": "how to say large numbers like one thousand",
+      "expected": [
+        "numbers:thousands",
+        "numbers:hundreds",
+        "numbers:millions"
+      ]
+    },
+    {
+      "id": "c01",
+      "type": "confusion",
+      "split": "dev",
+      "query": "why do I say tiene instead of tienes with the vendor",
+      "expected": [
+        "verb:tener",
+        "phrase:p012"
+      ]
+    },
+    {
+      "id": "c02",
+      "type": "confusion",
+      "split": "test",
+      "query": "when is it ser and when is it estar",
+      "expected": [
+        "verb:ser",
+        "verb:estar"
+      ]
+    },
+    {
+      "id": "c03",
+      "type": "confusion",
+      "split": "dev",
+      "query": "I mixed up cien and ciento",
+      "expected": [
+        "numbers:rules",
+        "numbers:hundreds"
+      ]
+    },
+    {
+      "id": "c04",
+      "type": "confusion",
+      "split": "test",
+      "query": "what is the difference between medio kilo and la mitad",
+      "expected": [
+        "measurements:fractions",
+        "math:fractions_percent"
+      ]
+    },
+    {
+      "id": "c05",
+      "type": "confusion",
+      "split": "dev",
+      "query": "I never know whether to say es la una or son las dos",
+      "expected": [
+        "time:rules",
+        "time:clock_examples"
+      ]
+    },
+    {
+      "id": "c06",
+      "type": "confusion",
+      "split": "test",
+      "query": "why is it me da and not dame",
+      "expected": [
+        "phrase:p001",
+        "verb:dar"
+      ]
+    },
+    {
+      "id": "c07",
+      "type": "confusion",
+      "split": "dev",
+      "query": "confused about how to say twenty one with un or uno",
+      "expected": [
+        "numbers:rules",
+        "numbers:teens_twenties"
+      ]
+    },
+    {
+      "id": "c08",
+      "type": "confusion",
+      "split": "test",
+      "query": "I got the change calculation wrong",
+      "expected": [
+        "math:shopping_examples",
+        "math:operations"
+      ]
+    },
+    {
+      "id": "c09",
+      "type": "confusion",
+      "split": "dev",
+      "query": "how do I say 3:45 in Spanish",
+      "expected": [
+        "time:clock_examples",
+        "time:rules"
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "confusion",
+      "split": "test",
+      "query": "what is the difference between querer and necesitar",
+      "expected": [
+        "verb:querer",
+        "verb:necesitar"
+      ]
+    },
+    {
+      "id": "u01",
+      "type": "uncovered",
+      "split": "dev",
+      "query": "how do I rent an apartment",
+      "expected": []
+    },
+    {
+      "id": "u02",
+      "type": "uncovered",
+      "split": "test",
+      "query": "how to say happy birthday",
+      "expected": []
+    },
+    {
+      "id": "u03",
+      "type": "uncovered",
+      "split": "dev",
+      "query": "words for car repair at a mechanic",
+      "expected": []
+    },
+    {
+      "id": "u04",
+      "type": "uncovered",
+      "split": "test",
+      "query": "how do I open a bank account",
+      "expected": []
+    },
+    {
+      "id": "u05",
+      "type": "uncovered",
+      "split": "dev",
+      "query": "what is the subjunctive mood",
+      "expected": []
+    }
+  ]
+}
